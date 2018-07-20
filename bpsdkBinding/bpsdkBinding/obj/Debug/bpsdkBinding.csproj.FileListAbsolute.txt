@@ -1,0 +1,5 @@
+/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/bpsdkBinding/bin/Debug/bpsdkBinding.dll
+/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/bpsdkBinding/bin/Debug/bpsdkBinding.pdb
+/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/bpsdkBinding/obj/Debug/bpsdkBinding.csproj.CoreCompileInputs.cache
+/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/bpsdkBinding/obj/Debug/bpsdkBinding.dll
+/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/bpsdkBinding/obj/Debug/bpsdkBinding.pdb

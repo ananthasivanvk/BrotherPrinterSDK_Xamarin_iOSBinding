@@ -1,0 +1,34 @@
+Function=xamarin_timezone_get_data
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_BRPtouchBLEManager
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/bpsdkBinding.dll
+ObjectiveCClass=OBJC_CLASS_$_BRPtouchBluetoothManager
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/bpsdkBinding.dll
+ObjectiveCClass=OBJC_CLASS_$_BRPtouchDeviceInfo
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/bpsdkBinding.dll
+ObjectiveCClass=OBJC_CLASS_$_BRPtouchLabelInfoStatus
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/bpsdkBinding.dll
+ObjectiveCClass=OBJC_CLASS_$_BRPtouchLabelParam
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/bpsdkBinding.dll
+ObjectiveCClass=OBJC_CLASS_$_BRPtouchNetworkManager
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/bpsdkBinding.dll
+ObjectiveCClass=OBJC_CLASS_$_BRPtouchPrinter
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/bpsdkBinding.dll
+ObjectiveCClass=OBJC_CLASS_$_BRPtouchPrinterData
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/bpsdkBinding.dll
+ObjectiveCClass=OBJC_CLASS_$_BRPtouchPrinterKit
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/bpsdkBinding.dll
+ObjectiveCClass=OBJC_CLASS_$_BRPtouchPrinterStatus
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/bpsdkBinding.dll
+ObjectiveCClass=OBJC_CLASS_$_BRPtouchPrintInfo
+	/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/mtouch-cache/Link/bpsdkBinding.dll
+Function=mono_pmip
+Function=mono_profiler_init_log
