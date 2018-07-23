@@ -61,8 +61,10 @@ namespace bpsdkBinding
 
         public byte byFontColor;
 
+		[MarshalAs(UnmanagedType.ByValArray, SizeConst = 4)]
         public byte[] byHardWareSetting;
 
+		[MarshalAs(UnmanagedType.ByValArray, SizeConst = 2)]
         public byte[] byNoUse;
     }
 

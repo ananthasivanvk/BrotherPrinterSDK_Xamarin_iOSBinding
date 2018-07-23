@@ -1,0 +1,13 @@
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/bin/iPhone/Release/BPSDKSample.exe
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/bin/iPhone/Release/BPSDKSample.pdb
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/bin/iPhone/Release/bpsdkBinding.dll
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/bin/iPhone/Release/Calabash.dll
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Release/ibtool/_BundleResourceWithLogicalName.items
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Release/actool/_PartialAppManifest.items
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Release/actool/_BundleResourceWithLogicalName.items
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Release/coremlc/_PartialAppManifest.items
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Release/coremlc/_BundleResourceWithLogicalName.items
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Release/optimized/
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Release/BPSDKSample.csproj.CoreCompileInputs.cache
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Release/BPSDKSample.exe
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Release/BPSDKSample.pdb

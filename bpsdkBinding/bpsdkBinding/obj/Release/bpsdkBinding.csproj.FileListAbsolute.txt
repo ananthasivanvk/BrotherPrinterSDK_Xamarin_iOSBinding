@@ -1,0 +1,3 @@
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/bpsdkBinding/bin/Release/bpsdkBinding.dll
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/bpsdkBinding/obj/Release/bpsdkBinding.csproj.CoreCompileInputs.cache
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/bpsdkBinding/obj/Release/bpsdkBinding.dll

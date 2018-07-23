@@ -1,0 +1,8 @@
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/bin/iPhoneSimulator/Release/BPSDKSample.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.10.1.177/lib/mono/Xamarin.iOS/mscorlib.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.10.1.177/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.10.1.177/lib/mono/Xamarin.iOS/System.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.10.1.177/lib/mono/Xamarin.iOS/Mono.Security.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.10.1.177/lib/mono/Xamarin.iOS/System.Xml.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.10.1.177/lib/mono/Xamarin.iOS/System.Core.dll
+/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/bpsdkBinding/bin/Release/bpsdkBinding.dll

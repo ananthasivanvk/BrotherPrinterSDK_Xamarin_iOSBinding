@@ -6,7 +6,7 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/actool/partial-info.plist</string>
+			<string>/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/actool/partial-info.plist</string>
 		</array>
 	</dict>
 </dict>
