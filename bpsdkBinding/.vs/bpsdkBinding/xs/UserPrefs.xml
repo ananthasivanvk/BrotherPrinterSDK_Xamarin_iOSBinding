@@ -1,5 +1,8 @@
 ﻿<Properties StartupConfiguration="{C552B3F3-B345-4A4C-9350-24D66E9DFFD7}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="BPSDKSample/Main.cs">
+    <Files>
+      <File FileName="BPSDKSample/Main.cs" Line="16" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -7,9 +10,9 @@
             <Node name="bpsdkBinding" expanded="True">
               <Node name="NativeReferenceFolder" expanded="True" />
             </Node>
-            <Node name="BPSDKSample" expanded="True">
+            <Node name="BPSDKSample" expanded="True" selected="True">
               <Node name="References" expanded="True" />
-              <Node name="Info.plist" selected="True" />
+              <Node name="ViewController.cs" expanded="True" />
             </Node>
           </Node>
         </State>

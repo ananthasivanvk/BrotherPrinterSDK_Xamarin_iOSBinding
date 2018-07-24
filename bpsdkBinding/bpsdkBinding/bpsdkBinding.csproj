@@ -46,24 +46,7 @@
       <IsCxx>True</IsCxx>
       <ForceLoad>True</ForceLoad>
       <LinkerFlags>-lc++</LinkerFlags>
-    </NativeReference>
-    <NativeReference Include="CFNetwork.framework">
-      <Kind>Framework</Kind>
-      <IsCxx>True</IsCxx>
-      <ForceLoad>True</ForceLoad>
-      <LinkerFlags>-lc++</LinkerFlags>
-    </NativeReference>
-    <NativeReference Include="CoreBluetooth.framework">
-      <Kind>Framework</Kind>
-      <ForceLoad>True</ForceLoad>
-      <IsCxx>True</IsCxx>
-      <LinkerFlags>-lc++</LinkerFlags>
-    </NativeReference>
-    <NativeReference Include="ExternalAccessory.framework">
-      <Kind>Framework</Kind>
-      <ForceLoad>True</ForceLoad>
-      <IsCxx>True</IsCxx>
-      <LinkerFlags>-lc++</LinkerFlags>
+      <Frameworks>CFNetwork CoreBluetooth ExternalAccessory</Frameworks>
     </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
