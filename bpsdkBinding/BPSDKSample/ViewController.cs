@@ -27,7 +27,7 @@ namespace BPSDKSample
 					NSPredicate nSPredicate = NSPredicate.FromFormat("((mediaSubtype & {0}) == {0})", new NSObject());
 					BRPtouchBluetoothManager.SharedManager.BrShowBluetoothAccessoryPickerWithNameFilter(nSPredicate);
 
-					BRPtouchPrintInfo printInfo = new BRPtouchPrintInfo();
+					/*BRPtouchPrintInfo printInfo = new BRPtouchPrintInfo();
 
 					printInfo.StrPaperName = "A4_CutSheet";
                     printInfo.NDensity = 5;
@@ -39,7 +39,7 @@ namespace BPSDKSample
                     printer.SetPrintInfo(printInfo);
 					printer.StartCommunication();
                     CoreGraphics.CGImage cG = CoreGraphics.CGImage.ScreenImage;
-					printer.PrintImage(cG, 1);
+					printer.PrintImage(cG, 1);*/
 
 				}));
 
