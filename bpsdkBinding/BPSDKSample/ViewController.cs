@@ -23,23 +23,39 @@ namespace BPSDKSample
 
                 //Add Action
 				okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, (obj) => {
-					//EAAccessoryManager.SharedAccessoryManager.ShowBluetoothAccessoryPicker(null, delegate { Console.WriteLine("Completed"); });
-					NSPredicate nSPredicate = NSPredicate.FromFormat("((mediaSubtype & {0}) == {0})", new NSObject());
-					BRPtouchBluetoothManager.SharedManager.BrShowBluetoothAccessoryPickerWithNameFilter(nSPredicate);
+					
+					EAAccessoryManager.SharedAccessoryManager.ShowBluetoothAccessoryPicker(null, delegate 
+					{ 
+						Console.WriteLine("Completed");                  
+					});
 
-					/*BRPtouchPrintInfo printInfo = new BRPtouchPrintInfo();
+					EAAccessoryManager.Notifications.ObserveDidConnect((object bsender, EAAccessoryEventArgs eAccessoryEventArgs) => 
+					{
+						if(eAccessoryEventArgs.Notification.Equals(EAAccessoryManager.DidConnectNotification))
+						{
+							Console.WriteLine("connected!!");
+						}
 
-					printInfo.StrPaperName = "A4_CutSheet";
-                    printInfo.NDensity = 5;
-                    
-                    // Initialize  printer
-					BRPtouchPrinter printer = new BRPtouchPrinter("Brother PJ-763", ConnectionType.Bluetooth);
-					//printer.SetupForBluetoothDeviceWithSerialNumber("serial number");
-					printer.SetIPAddress("192.168.0.122");
-                    printer.SetPrintInfo(printInfo);
-					printer.StartCommunication();
-                    CoreGraphics.CGImage cG = CoreGraphics.CGImage.ScreenImage;
-					printer.PrintImage(cG, 1);*/
+						EAAccessory[] eAAccessories = EAAccessoryManager.SharedAccessoryManager.ConnectedAccessories;
+
+						if((eAAccessories != null) && (eAAccessories.Length > 0))
+						{
+							var serialNumber = eAAccessories[0].SerialNumber;
+
+                            var c = BRPtouchBluetoothManager.SharedManager;
+                            
+                            BRPtouchPrintInfo printInfo = new BRPtouchPrintInfo();
+
+                            printInfo.StrPaperName = "LETTER_CutSheet";
+
+                            BRPtouchPrinter printer = new BRPtouchPrinter("PJ-763MFi", ConnectionType.Bluetooth);
+                            printer.SetupForBluetoothDeviceWithSerialNumber(serialNumber);
+                            printer.SetPrintInfo(printInfo);
+                            printer.StartCommunication();
+                            CoreGraphics.CGImage cG = CoreGraphics.CGImage.ScreenImage;
+                            printer.PrintImage(cG, 1);
+						}
+					});
 
 				}));
 
