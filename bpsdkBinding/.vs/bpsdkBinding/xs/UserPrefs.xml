@@ -1,21 +1,5 @@
 ﻿<Properties StartupConfiguration="{C552B3F3-B345-4A4C-9350-24D66E9DFFD7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BPSDKSample/ViewController.cs">
-    <Files>
-      <File FileName="BPSDKSample/ViewController.cs" Line="62" Column="33" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="bpsdkBinding" expanded="True">
-            <Node name="bpsdkBinding" expanded="True">
-              <Node name="NativeReferenceFolder" expanded="True" />
-            </Node>
-            <Node name="BPSDKSample" expanded="True" selected="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.ItemProperties.BPSDKSample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1A445E63-542E-4CF2-B084-15FCBC7FEE2D" automaticSigning="False" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

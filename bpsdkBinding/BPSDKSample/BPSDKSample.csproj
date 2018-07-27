@@ -91,12 +91,6 @@
     <Reference Include="bpsdkBinding">
       <HintPath>..\bpsdkBinding\bin\Release\bpsdkBinding.dll</HintPath>
     </Reference>
-    <Reference Include="bpsdkBinding">
-      <HintPath>..\bpsdkBinding\bin\Release\bpsdkBinding.dll</HintPath>
-    </Reference>
-    <Reference Include="bpsdkBinding">
-      <HintPath>..\bpsdkBinding\bin\Release\bpsdkBinding.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
