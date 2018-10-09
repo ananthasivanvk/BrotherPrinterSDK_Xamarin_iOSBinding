@@ -1,29 +1,13 @@
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/bin/iPhone/Debug/BPSDKSample.exe
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/bin/iPhone/Debug/BPSDKSample.pdb
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/bin/iPhone/Debug/bpsdkBinding.dll
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/bin/iPhone/Debug/Calabash.dll
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/bin/iPhone/Debug/bpsdkBinding.pdb
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/ibtool/_BundleResourceWithLogicalName.items
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/actool/_PartialAppManifest.items
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/actool/_BundleResourceWithLogicalName.items
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/coremlc/_PartialAppManifest.items
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/coremlc/_BundleResourceWithLogicalName.items
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/optimized/
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/BPSDKSample.csprojResolveAssemblyReference.cache
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/BPSDKSample.csproj.CoreCompileInputs.cache
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/BPSDKSample.exe
-/Users/Ananthasivanvk/Documents/OneDrive/OneDrive - Softura, Inc/Documents/PrinterSDK/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/BPSDKSample.pdb
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/bin/iPhone/Debug/BPSDKSample.exe
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/bin/iPhone/Debug/BPSDKSample.pdb
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/bin/iPhone/Debug/bpsdkBinding.dll
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/bin/iPhone/Debug/Calabash.dll
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/ibtool/_BundleResourceWithLogicalName.items
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/actool/_PartialAppManifest.items
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/actool/_BundleResourceWithLogicalName.items
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/coremlc/_PartialAppManifest.items
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/coremlc/_BundleResourceWithLogicalName.items
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/optimized/
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/BPSDKSample.csprojResolveAssemblyReference.cache
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/BPSDKSample.csproj.CoreCompileInputs.cache
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/BPSDKSample.exe
-/Users/Ananthasivanvk/Documents/GitHub/BrotherPrinterSDK_Xamarin_iOSBinding/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/BPSDKSample.pdb
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/bin/iPhone/Debug/BPSDKSample.exe
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/bin/iPhone/Debug/BPSDKSample.pdb
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/bin/iPhone/Debug/bpsdkBinding.dll
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/bin/iPhone/Debug/Calabash.dll
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/actool/_PartialAppManifest.items
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/coremlc/_PartialAppManifest.items
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/coremlc/_BundleResourceWithLogicalName.items
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/optimized/
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/BPSDKSample.csproj.CoreCompileInputs.cache
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/BPSDKSample.exe
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Debug/BPSDKSample.pdb

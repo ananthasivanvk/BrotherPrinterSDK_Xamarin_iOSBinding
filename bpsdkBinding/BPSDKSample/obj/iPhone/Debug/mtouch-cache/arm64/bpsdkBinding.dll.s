@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.10.1 (tarball Wed Apr 25 14:36:22 EDT 2018)"
+	.asciz "Mono AOT Compiler 5.8.0 (tarball Thu Mar 29 18:51:02 EDT 2018)"
 	.asciz "bpsdkBinding.dll"
 	.asciz ""
 
@@ -233,7 +233,7 @@ bl _p_3
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801160
+.word 0xd2801060
 .word 0xaa1103e1
 bl _p_4
 
@@ -719,10 +719,10 @@ ldr x1, [x16, #344]
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801320
+.word 0xd2801220
 .word 0xaa1103e1
 bl _p_4
-.word 0xd2800920
+.word 0xd2800820
 .word 0xaa1103e1
 bl _p_4
 
@@ -848,7 +848,7 @@ add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x1, [x16, #368]
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -981,7 +981,7 @@ bl _p_17
 .word 0xf9402fa1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf9002ba0
 .word 0xf9400fb1
@@ -1127,7 +1127,7 @@ bl _p_17
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -1221,7 +1221,7 @@ bl _p_22
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -1316,9 +1316,9 @@ ldr x0, [x16, #0]
 .word 0xd2800161
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -1351,39 +1351,33 @@ add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x1, [x16, #264]
 .word 0xf9400021
 .word 0xaa1a03e2
-.word 0xd2800002
-
-adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
-add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x4, [x16, #448]
 .word 0xaa1a03e2
-.word 0xd2800003
 bl _p_25
 .word 0xf9401bb1
-.word 0xf9416e31
+.word 0xf9415a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf9417e31
+.word 0xf9416a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf9418e31
+.word 0xf9417a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf9419e31
+.word 0xf9418a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf941ae31
+.word 0xf9419a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94017a0
 bl _p_16
 .word 0xf9004ba0
 .word 0xf9401bb1
-.word 0xf941ca31
+.word 0xf941b631
 .word 0xb4000051
 .word 0xd63f0220
 adrp x0, L_OBJC_SELECTOR_REFERENCES_1@PAGE
@@ -1391,14 +1385,14 @@ add x0, x0, L_OBJC_SELECTOR_REFERENCES_1@PAGEOFF
 ldr x0, [x0]
 .word 0xf9004fa0
 .word 0xf9401bb1
-.word 0xf941ea31
+.word 0xf941d631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1803e0
 bl _p_6
 .word 0xf90053a0
 .word 0xf9401bb1
-.word 0xf9420631
+.word 0xf941f231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9404ba0
@@ -1408,60 +1402,60 @@ bl _p_26
 .word 0x53001c00
 .word 0xf90047a0
 .word 0xf9401bb1
-.word 0xf9422e31
+.word 0xf9421a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94047a0
 .word 0x53001c00
 .word 0xaa0003f7
 .word 0xf9401bb1
-.word 0xf9424a31
+.word 0xf9423631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf9425a31
+.word 0xf9424631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf9426a31
+.word 0xf9425631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf9427a31
+.word 0xf9426631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf9428a31
+.word 0xf9427631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf9429a31
+.word 0xf9428631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf942aa31
+.word 0xf9429631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf942ba31
+.word 0xf942a631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf942ca31
+.word 0xf942b631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf942da31
+.word 0xf942c631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1803e0
 bl _p_27
 .word 0xf9401bb1
-.word 0xf942f231
+.word 0xf942de31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf9430231
+.word 0xf942ee31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1703e0
@@ -1471,12 +1465,12 @@ bl _p_27
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf9432a31
+.word 0xf9431631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94043a0
 .word 0xf9401bb1
-.word 0xf9433e31
+.word 0xf9432a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xa94163b7
@@ -1497,7 +1491,7 @@ bpsdkBinding_BRPtouchBLEManager_StopSearch:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #456]
+ldr x16, [x16, #448]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -1570,7 +1564,7 @@ bpsdkBinding_BRPtouchBLEManager_get_SharedManager:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #464]
+ldr x16, [x16, #456]
 .word 0xf9000bb0
 .word 0xf9400a11
 .word 0xf9000fb1
@@ -1612,7 +1606,7 @@ bl _p_20
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x15, [x16, #472]
+ldr x15, [x16, #464]
 bl _p_29
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -1647,7 +1641,7 @@ bpsdkBinding_BRPtouchBLEManager__cctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #480]
+ldr x16, [x16, #472]
 .word 0xf9000bb0
 .word 0xf9400a11
 .word 0xf9000fb1
@@ -1666,7 +1660,7 @@ ldr x16, [x16, #480]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #488]
+ldr x0, [x16, #480]
 bl _p_30
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -1703,7 +1697,7 @@ bpsdkBinding_BRPtouchBluetoothManager_get_ClassHandle:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #496]
+ldr x16, [x16, #488]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -1722,7 +1716,7 @@ ldr x16, [x16, #496]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #496]
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xf94013b1
@@ -1755,7 +1749,7 @@ bpsdkBinding_BRPtouchBluetoothManager__ctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #512]
+ldr x16, [x16, #504]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -1799,7 +1793,7 @@ bl _p_17
 .word 0xf9402fa1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf9002ba0
 .word 0xf9400fb1
@@ -1905,7 +1899,7 @@ bpsdkBinding_BRPtouchBluetoothManager__ctor_Foundation_NSObjectFlag:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #520]
+ldr x16, [x16, #512]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -1945,7 +1939,7 @@ bl _p_17
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -1999,7 +1993,7 @@ bpsdkBinding_BRPtouchBluetoothManager__ctor_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #528]
+ldr x16, [x16, #520]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -2039,7 +2033,7 @@ bl _p_22
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -2093,7 +2087,7 @@ bpsdkBinding_BRPtouchBluetoothManager_BrShowBluetoothAccessoryPickerWithNameFilt
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #536]
+ldr x16, [x16, #528]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -2119,13 +2113,13 @@ ldr x16, [x16, #536]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2801821
-.word 0xd2801821
+.word 0xd28016e1
+.word 0xd28016e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -2202,7 +2196,7 @@ bpsdkBinding_BRPtouchBluetoothManager_RegisterForBRDeviceNotifications:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #544]
+ldr x16, [x16, #536]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -2276,7 +2270,7 @@ bpsdkBinding_BRPtouchBluetoothManager_UnregisterForBRDeviceNotifications:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #552]
+ldr x16, [x16, #544]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -2351,7 +2345,7 @@ bpsdkBinding_BRPtouchBluetoothManager_get_PairedDevices:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #560]
+ldr x16, [x16, #552]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -2407,7 +2401,7 @@ bl _p_20
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x15, [x16, #568]
+ldr x15, [x16, #560]
 bl _p_32
 .word 0xf9002ba0
 .word 0xf94013b1
@@ -2484,7 +2478,7 @@ bpsdkBinding_BRPtouchBluetoothManager_get_SharedManager:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #576]
+ldr x16, [x16, #568]
 .word 0xf9000bb0
 .word 0xf9400a11
 .word 0xf9000fb1
@@ -2503,7 +2497,7 @@ ldr x16, [x16, #576]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #496]
 .word 0xf9400000
 .word 0xf90023a0
 adrp x0, L_OBJC_SELECTOR_REFERENCES_3@PAGE
@@ -2526,7 +2520,7 @@ bl _p_20
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x15, [x16, #584]
+ldr x15, [x16, #576]
 bl _p_33
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -2561,7 +2555,7 @@ bpsdkBinding_BRPtouchBluetoothManager__cctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #592]
+ldr x16, [x16, #584]
 .word 0xf9000bb0
 .word 0xf9400a11
 .word 0xf9000fb1
@@ -2580,7 +2574,7 @@ ldr x16, [x16, #592]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #600]
+ldr x0, [x16, #592]
 bl _p_30
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -2591,7 +2585,7 @@ bl _p_30
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #496]
 .word 0xf9000001
 .word 0xf9400bb1
 .word 0xf9409631
@@ -2617,7 +2611,7 @@ bpsdkBinding_BRPtouchDeviceInfo_get_ClassHandle:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #608]
+ldr x16, [x16, #600]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -2636,7 +2630,7 @@ ldr x16, [x16, #608]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xf94013b1
@@ -2669,7 +2663,7 @@ bpsdkBinding_BRPtouchDeviceInfo__ctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #624]
+ldr x16, [x16, #616]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -2713,7 +2707,7 @@ bl _p_17
 .word 0xf9402fa1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf9002ba0
 .word 0xf9400fb1
@@ -2819,7 +2813,7 @@ bpsdkBinding_BRPtouchDeviceInfo__ctor_Foundation_NSObjectFlag:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #632]
+ldr x16, [x16, #624]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -2859,7 +2853,7 @@ bl _p_17
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -2913,7 +2907,7 @@ bpsdkBinding_BRPtouchDeviceInfo__ctor_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #640]
+ldr x16, [x16, #632]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -2953,7 +2947,7 @@ bl _p_22
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -3005,7 +2999,7 @@ bpsdkBinding_BRPtouchDeviceInfo_get_StrBLEAdvertiseLocalName:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #648]
+ldr x16, [x16, #640]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -3095,7 +3089,7 @@ bpsdkBinding_BRPtouchDeviceInfo_set_StrBLEAdvertiseLocalName_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #656]
+ldr x16, [x16, #648]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -3122,13 +3116,13 @@ ldr x16, [x16, #656]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804721
-.word 0xd2804721
+.word 0xd28045e1
+.word 0xd28045e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -3249,7 +3243,7 @@ bpsdkBinding_BRPtouchDeviceInfo_get_StrIPAddress:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #664]
+ldr x16, [x16, #656]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -3339,7 +3333,7 @@ bpsdkBinding_BRPtouchDeviceInfo_set_StrIPAddress_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #672]
+ldr x16, [x16, #664]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -3366,13 +3360,13 @@ ldr x16, [x16, #672]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804721
-.word 0xd2804721
+.word 0xd28045e1
+.word 0xd28045e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -3493,7 +3487,7 @@ bpsdkBinding_BRPtouchDeviceInfo_get_StrLocation:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #680]
+ldr x16, [x16, #672]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -3583,7 +3577,7 @@ bpsdkBinding_BRPtouchDeviceInfo_set_StrLocation_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #688]
+ldr x16, [x16, #680]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -3610,13 +3604,13 @@ ldr x16, [x16, #688]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804721
-.word 0xd2804721
+.word 0xd28045e1
+.word 0xd28045e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -3737,7 +3731,7 @@ bpsdkBinding_BRPtouchDeviceInfo_get_StrMACAddress:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #696]
+ldr x16, [x16, #688]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -3827,7 +3821,7 @@ bpsdkBinding_BRPtouchDeviceInfo_set_StrMACAddress_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #704]
+ldr x16, [x16, #696]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -3854,13 +3848,13 @@ ldr x16, [x16, #704]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804721
-.word 0xd2804721
+.word 0xd28045e1
+.word 0xd28045e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -3981,7 +3975,7 @@ bpsdkBinding_BRPtouchDeviceInfo_get_StrModelName:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #712]
+ldr x16, [x16, #704]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -4071,7 +4065,7 @@ bpsdkBinding_BRPtouchDeviceInfo_set_StrModelName_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #720]
+ldr x16, [x16, #712]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -4098,13 +4092,13 @@ ldr x16, [x16, #720]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804721
-.word 0xd2804721
+.word 0xd28045e1
+.word 0xd28045e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -4225,7 +4219,7 @@ bpsdkBinding_BRPtouchDeviceInfo_get_StrNodeName:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #728]
+ldr x16, [x16, #720]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -4315,7 +4309,7 @@ bpsdkBinding_BRPtouchDeviceInfo_set_StrNodeName_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #736]
+ldr x16, [x16, #728]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -4342,13 +4336,13 @@ ldr x16, [x16, #736]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804721
-.word 0xd2804721
+.word 0xd28045e1
+.word 0xd28045e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -4469,7 +4463,7 @@ bpsdkBinding_BRPtouchDeviceInfo_get_StrPrinterName:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #744]
+ldr x16, [x16, #736]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -4559,7 +4553,7 @@ bpsdkBinding_BRPtouchDeviceInfo_set_StrPrinterName_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #752]
+ldr x16, [x16, #744]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -4586,13 +4580,13 @@ ldr x16, [x16, #752]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804721
-.word 0xd2804721
+.word 0xd28045e1
+.word 0xd28045e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -4713,7 +4707,7 @@ bpsdkBinding_BRPtouchDeviceInfo_get_StrSerialNumber:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #760]
+ldr x16, [x16, #752]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -4803,7 +4797,7 @@ bpsdkBinding_BRPtouchDeviceInfo_set_StrSerialNumber_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #768]
+ldr x16, [x16, #760]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -4830,13 +4824,13 @@ ldr x16, [x16, #768]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804721
-.word 0xd2804721
+.word 0xd28045e1
+.word 0xd28045e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -4956,7 +4950,7 @@ bpsdkBinding_BRPtouchDeviceInfo__cctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #776]
+ldr x16, [x16, #768]
 .word 0xf9000bb0
 .word 0xf9400a11
 .word 0xf9000fb1
@@ -4975,7 +4969,7 @@ ldr x16, [x16, #776]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #784]
+ldr x0, [x16, #776]
 bl _p_30
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -4986,7 +4980,7 @@ bl _p_30
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xf9000001
 .word 0xf9400bb1
 .word 0xf9409631
@@ -5012,7 +5006,7 @@ bpsdkBinding_BRPtouchLabelInfoStatus_get_ClassHandle:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #792]
+ldr x16, [x16, #784]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -5031,7 +5025,7 @@ ldr x16, [x16, #792]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #800]
+ldr x0, [x16, #792]
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xf94013b1
@@ -5064,7 +5058,7 @@ bpsdkBinding_BRPtouchLabelInfoStatus__ctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #808]
+ldr x16, [x16, #800]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -5108,7 +5102,7 @@ bl _p_17
 .word 0xf9402fa1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf9002ba0
 .word 0xf9400fb1
@@ -5214,7 +5208,7 @@ bpsdkBinding_BRPtouchLabelInfoStatus__ctor_Foundation_NSObjectFlag:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #816]
+ldr x16, [x16, #808]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -5254,7 +5248,7 @@ bl _p_17
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -5308,7 +5302,7 @@ bpsdkBinding_BRPtouchLabelInfoStatus__ctor_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #824]
+ldr x16, [x16, #816]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -5348,7 +5342,7 @@ bl _p_22
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -5401,7 +5395,7 @@ bpsdkBinding_BRPtouchLabelInfoStatus_get_FontColor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #832]
+ldr x16, [x16, #824]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -5476,106 +5470,6 @@ bl _p_37
 .word 0xf9414231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9415231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9416231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9417231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9418231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9419231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941a231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941c231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941d231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941e231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941f231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9420231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9421231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9422231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9423231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9424231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9425231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9426231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9427231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9428231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9429231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942a231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942c231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942d231
-.word 0xb4000051
-.word 0xd63f0220
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017b1
@@ -5583,12 +5477,12 @@ bl _p_37
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94013b1
-.word 0xf942fa31
+.word 0xf9416a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94023a0
 .word 0xf94013b1
-.word 0xf9430e31
+.word 0xf9417e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400bb9
@@ -5609,7 +5503,7 @@ bpsdkBinding_BRPtouchLabelInfoStatus_set_FontColor_bpsdkBinding_ColorType:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #840]
+ldr x16, [x16, #832]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -5697,7 +5591,7 @@ bpsdkBinding_BRPtouchLabelInfoStatus_get_LabelColor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #848]
+ldr x16, [x16, #840]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -5772,106 +5666,6 @@ bl _p_37
 .word 0xf9414231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9415231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9416231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9417231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9418231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9419231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941a231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941c231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941d231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941e231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941f231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9420231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9421231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9422231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9423231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9424231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9425231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9426231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9427231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9428231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9429231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942a231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942c231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942d231
-.word 0xb4000051
-.word 0xd63f0220
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017b1
@@ -5879,12 +5673,12 @@ bl _p_37
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94013b1
-.word 0xf942fa31
+.word 0xf9416a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94023a0
 .word 0xf94013b1
-.word 0xf9430e31
+.word 0xf9417e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400bb9
@@ -5905,7 +5699,7 @@ bpsdkBinding_BRPtouchLabelInfoStatus_set_LabelColor_bpsdkBinding_ColorType:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #856]
+ldr x16, [x16, #848]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -5993,7 +5787,7 @@ bpsdkBinding_BRPtouchLabelInfoStatus_get_LabelID:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #864]
+ldr x16, [x16, #856]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -6068,106 +5862,6 @@ bl _p_37
 .word 0xf9414231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9415231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9416231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9417231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9418231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9419231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941a231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941c231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941d231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941e231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941f231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9420231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9421231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9422231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9423231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9424231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9425231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9426231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9427231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9428231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9429231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942a231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942c231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942d231
-.word 0xb4000051
-.word 0xd63f0220
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017b1
@@ -6175,12 +5869,12 @@ bl _p_37
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94013b1
-.word 0xf942fa31
+.word 0xf9416a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94023a0
 .word 0xf94013b1
-.word 0xf9430e31
+.word 0xf9417e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400bb9
@@ -6201,7 +5895,7 @@ bpsdkBinding_BRPtouchLabelInfoStatus_set_LabelID_bpsdkBinding_LabelIdType:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #872]
+ldr x16, [x16, #864]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -6287,7 +5981,7 @@ bpsdkBinding_BRPtouchLabelInfoStatus__cctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #880]
+ldr x16, [x16, #872]
 .word 0xf9000bb0
 .word 0xf9400a11
 .word 0xf9000fb1
@@ -6306,7 +6000,7 @@ ldr x16, [x16, #880]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #888]
+ldr x0, [x16, #880]
 bl _p_30
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -6317,7 +6011,7 @@ bl _p_30
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #800]
+ldr x0, [x16, #792]
 .word 0xf9000001
 .word 0xf9400bb1
 .word 0xf9409631
@@ -6343,7 +6037,7 @@ bpsdkBinding_BRPtouchLabelParam_get_ClassHandle:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #896]
+ldr x16, [x16, #888]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -6362,7 +6056,7 @@ ldr x16, [x16, #896]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #904]
+ldr x0, [x16, #896]
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xf94013b1
@@ -6395,7 +6089,7 @@ bpsdkBinding_BRPtouchLabelParam__ctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #912]
+ldr x16, [x16, #904]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -6439,7 +6133,7 @@ bl _p_17
 .word 0xf9402fa1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf9002ba0
 .word 0xf9400fb1
@@ -6545,7 +6239,7 @@ bpsdkBinding_BRPtouchLabelParam__ctor_Foundation_NSObjectFlag:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #920]
+ldr x16, [x16, #912]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -6585,7 +6279,7 @@ bl _p_17
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -6639,7 +6333,7 @@ bpsdkBinding_BRPtouchLabelParam__ctor_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #928]
+ldr x16, [x16, #920]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -6679,7 +6373,7 @@ bl _p_22
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -6731,7 +6425,7 @@ bpsdkBinding_BRPtouchLabelParam_get_ImageAreaLength:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #936]
+ldr x16, [x16, #928]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -6812,7 +6506,7 @@ bpsdkBinding_BRPtouchLabelParam_set_ImageAreaLength_uint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #944]
+ldr x16, [x16, #936]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -6887,7 +6581,7 @@ bpsdkBinding_BRPtouchLabelParam_get_ImageAreaLength_mm:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #952]
+ldr x16, [x16, #944]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -6968,7 +6662,7 @@ bpsdkBinding_BRPtouchLabelParam_set_ImageAreaLength_mm_uint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #960]
+ldr x16, [x16, #952]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -7043,7 +6737,7 @@ bpsdkBinding_BRPtouchLabelParam_get_ImageAreaWidth:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #968]
+ldr x16, [x16, #960]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -7124,7 +6818,7 @@ bpsdkBinding_BRPtouchLabelParam_set_ImageAreaWidth_uint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #976]
+ldr x16, [x16, #968]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -7199,7 +6893,7 @@ bpsdkBinding_BRPtouchLabelParam_get_ImageAreaWidth_mm:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #984]
+ldr x16, [x16, #976]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -7280,7 +6974,7 @@ bpsdkBinding_BRPtouchLabelParam_set_ImageAreaWidth_mm_uint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #992]
+ldr x16, [x16, #984]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -7355,7 +7049,7 @@ bpsdkBinding_BRPtouchLabelParam_get_PaperID:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1000]
+ldr x16, [x16, #992]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -7436,7 +7130,7 @@ bpsdkBinding_BRPtouchLabelParam_set_PaperID_uint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1008]
+ldr x16, [x16, #1000]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -7511,7 +7205,7 @@ bpsdkBinding_BRPtouchLabelParam_get_PaperLength:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1016]
+ldr x16, [x16, #1008]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -7592,7 +7286,7 @@ bpsdkBinding_BRPtouchLabelParam_set_PaperLength_uint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1024]
+ldr x16, [x16, #1016]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -7667,7 +7361,7 @@ bpsdkBinding_BRPtouchLabelParam_get_PaperLength_mm:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1032]
+ldr x16, [x16, #1024]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -7750,7 +7444,7 @@ bpsdkBinding_BRPtouchLabelParam_set_PaperLength_mm_single:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1040]
+ldr x16, [x16, #1032]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -7827,7 +7521,7 @@ bpsdkBinding_BRPtouchLabelParam_get_PaperName:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1048]
+ldr x16, [x16, #1040]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -7917,7 +7611,7 @@ bpsdkBinding_BRPtouchLabelParam_set_PaperName_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1056]
+ldr x16, [x16, #1048]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -7944,13 +7638,13 @@ ldr x16, [x16, #1056]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804721
-.word 0xd2804721
+.word 0xd28045e1
+.word 0xd28045e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -8071,7 +7765,7 @@ bpsdkBinding_BRPtouchLabelParam_get_PaperSize:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1064]
+ldr x16, [x16, #1056]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -8152,7 +7846,7 @@ bpsdkBinding_BRPtouchLabelParam_set_PaperSize_uint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1072]
+ldr x16, [x16, #1064]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -8227,7 +7921,7 @@ bpsdkBinding_BRPtouchLabelParam_get_PaperWidth:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1080]
+ldr x16, [x16, #1072]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -8308,7 +8002,7 @@ bpsdkBinding_BRPtouchLabelParam_set_PaperWidth_uint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1088]
+ldr x16, [x16, #1080]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -8383,7 +8077,7 @@ bpsdkBinding_BRPtouchLabelParam_get_PaperWidth_mm:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1096]
+ldr x16, [x16, #1088]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -8466,7 +8160,7 @@ bpsdkBinding_BRPtouchLabelParam_set_PaperWidth_mm_single:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1104]
+ldr x16, [x16, #1096]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -8543,7 +8237,7 @@ bpsdkBinding_BRPtouchLabelParam_get_PhysicalOffsetX:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1112]
+ldr x16, [x16, #1104]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -8624,7 +8318,7 @@ bpsdkBinding_BRPtouchLabelParam_set_PhysicalOffsetX_uint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1120]
+ldr x16, [x16, #1112]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -8699,7 +8393,7 @@ bpsdkBinding_BRPtouchLabelParam_get_PhysicalOffsetY:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1128]
+ldr x16, [x16, #1120]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -8780,7 +8474,7 @@ bpsdkBinding_BRPtouchLabelParam_set_PhysicalOffsetY_uint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1136]
+ldr x16, [x16, #1128]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -8855,7 +8549,7 @@ bpsdkBinding_BRPtouchLabelParam_get_PinOffsetLeft:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1144]
+ldr x16, [x16, #1136]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -8936,7 +8630,7 @@ bpsdkBinding_BRPtouchLabelParam_set_PinOffsetLeft_uint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1152]
+ldr x16, [x16, #1144]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -9011,7 +8705,7 @@ bpsdkBinding_BRPtouchLabelParam_get_PinOffsetRight:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1160]
+ldr x16, [x16, #1152]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -9092,7 +8786,7 @@ bpsdkBinding_BRPtouchLabelParam_set_PinOffsetRight_uint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1168]
+ldr x16, [x16, #1160]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -9166,7 +8860,7 @@ bpsdkBinding_BRPtouchLabelParam__cctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1176]
+ldr x16, [x16, #1168]
 .word 0xf9000bb0
 .word 0xf9400a11
 .word 0xf9000fb1
@@ -9185,7 +8879,7 @@ ldr x16, [x16, #1176]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1184]
+ldr x0, [x16, #1176]
 bl _p_30
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -9196,7 +8890,7 @@ bl _p_30
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #904]
+ldr x0, [x16, #896]
 .word 0xf9000001
 .word 0xf9400bb1
 .word 0xf9409631
@@ -9223,7 +8917,7 @@ bpsdkBinding_BRPtouchNetworkDelegate__ctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1192]
+ldr x16, [x16, #1184]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -9331,7 +9025,7 @@ bpsdkBinding_BRPtouchNetworkDelegate__ctor_Foundation_NSObjectFlag:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1200]
+ldr x16, [x16, #1192]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -9395,7 +9089,7 @@ bpsdkBinding_BRPtouchNetworkDelegate__ctor_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1208]
+ldr x16, [x16, #1200]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -9457,7 +9151,7 @@ bpsdkBinding_BRPtouchNetworkManager_get_ClassHandle:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1216]
+ldr x16, [x16, #1208]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -9476,7 +9170,7 @@ ldr x16, [x16, #1216]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1224]
+ldr x0, [x16, #1216]
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xf94013b1
@@ -9509,7 +9203,7 @@ bpsdkBinding_BRPtouchNetworkManager__ctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1232]
+ldr x16, [x16, #1224]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -9553,7 +9247,7 @@ bl _p_17
 .word 0xf9402fa1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf9002ba0
 .word 0xf9400fb1
@@ -9659,7 +9353,7 @@ bpsdkBinding_BRPtouchNetworkManager__ctor_Foundation_NSObjectFlag:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1240]
+ldr x16, [x16, #1232]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -9699,7 +9393,7 @@ bl _p_17
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -9753,7 +9447,7 @@ bpsdkBinding_BRPtouchNetworkManager__ctor_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1248]
+ldr x16, [x16, #1240]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -9793,7 +9487,7 @@ bl _p_22
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -9848,7 +9542,7 @@ bpsdkBinding_BRPtouchNetworkManager__ctor_Foundation_NSObject__:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1256]
+ldr x16, [x16, #1248]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -9891,13 +9585,13 @@ bl _p_17
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2811ee1
-.word 0xd2811ee1
+.word 0xd2811da1
+.word 0xd2811da1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -9931,7 +9625,7 @@ bl _p_45
 .word 0xf9403ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90037a0
 .word 0xf94017b1
@@ -10013,7 +9707,7 @@ bl _p_46
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x2, [x16, #1264]
+ldr x2, [x16, #1256]
 .word 0xaa1903e0
 bl _p_21
 .word 0xf94017b1
@@ -10105,7 +9799,7 @@ bpsdkBinding_BRPtouchNetworkManager__ctor_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1272]
+ldr x16, [x16, #1264]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -10148,13 +9842,13 @@ bl _p_17
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd28074e1
-.word 0xd28074e1
+.word 0xd28073a1
+.word 0xd28073a1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -10188,7 +9882,7 @@ bl _p_35
 .word 0xf94037a1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90033a0
 .word 0xf94017b1
@@ -10261,7 +9955,7 @@ bl _p_46
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x2, [x16, #1280]
+ldr x2, [x16, #1272]
 .word 0xaa1903e0
 bl _p_21
 .word 0xf94017b1
@@ -10347,7 +10041,7 @@ bpsdkBinding_BRPtouchNetworkManager_SetPrinterName_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1288]
+ldr x16, [x16, #1280]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -10375,13 +10069,13 @@ ldr x16, [x16, #1288]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd28074e1
-.word 0xd28074e1
+.word 0xd28073a1
+.word 0xd28073a1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -10525,7 +10219,7 @@ bpsdkBinding_BRPtouchNetworkManager_SetPrinterNames_Foundation_NSObject__:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1296]
+ldr x16, [x16, #1288]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -10553,13 +10247,13 @@ ldr x16, [x16, #1296]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2811ee1
-.word 0xd2811ee1
+.word 0xd2811da1
+.word 0xd2811da1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -10716,7 +10410,7 @@ bpsdkBinding_BRPtouchNetworkManager_StartSearch_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1304]
+ldr x16, [x16, #1296]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -10799,7 +10493,7 @@ bpsdkBinding_BRPtouchNetworkManager_get_Delegate:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1312]
+ldr x16, [x16, #1304]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -10835,7 +10529,7 @@ ldr x16, [x16, #1312]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x1, [x16, #1320]
+ldr x1, [x16, #1312]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -10871,7 +10565,7 @@ bpsdkBinding_BRPtouchNetworkManager_set_Delegate_bpsdkBinding_BRPtouchNetworkDel
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1328]
+ldr x16, [x16, #1320]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -10921,7 +10615,7 @@ bpsdkBinding_BRPtouchNetworkManager_get_IsEnableIPv6Search:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1336]
+ldr x16, [x16, #1328]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -11003,7 +10697,7 @@ bpsdkBinding_BRPtouchNetworkManager_set_IsEnableIPv6Search_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1344]
+ldr x16, [x16, #1336]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -11079,7 +10773,7 @@ bpsdkBinding_BRPtouchNetworkManager_get_PrinterNetInfo:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1352]
+ldr x16, [x16, #1344]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -11135,7 +10829,7 @@ bl _p_20
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x15, [x16, #568]
+ldr x15, [x16, #560]
 bl _p_32
 .word 0xf9002ba0
 .word 0xf94013b1
@@ -11214,7 +10908,7 @@ bpsdkBinding_BRPtouchNetworkManager_get_RegisteredPrinterNames:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1360]
+ldr x16, [x16, #1352]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -11270,7 +10964,7 @@ bl _p_20
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x15, [x16, #1368]
+ldr x15, [x16, #1360]
 bl _p_51
 .word 0xf9002ba0
 .word 0xf94013b1
@@ -11350,7 +11044,7 @@ bpsdkBinding_BRPtouchNetworkManager_set_RegisteredPrinterNames_Foundation_NSMuta
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1376]
+ldr x16, [x16, #1368]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -11376,13 +11070,13 @@ ldr x16, [x16, #1376]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804721
-.word 0xd2804721
+.word 0xd28045e1
+.word 0xd28045e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -11460,7 +11154,7 @@ bpsdkBinding_BRPtouchNetworkManager_get_WeakDelegate:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1384]
+ldr x16, [x16, #1376]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -11624,7 +11318,7 @@ bpsdkBinding_BRPtouchNetworkManager_set_WeakDelegate_Foundation_NSObject:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1392]
+ldr x16, [x16, #1384]
 .word 0xf9001fb0
 .word 0xf9400a11
 .word 0xf90023b1
@@ -11814,7 +11508,7 @@ bpsdkBinding_BRPtouchNetworkManager_Dispose_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1400]
+ldr x16, [x16, #1392]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -11900,7 +11594,7 @@ bpsdkBinding_BRPtouchNetworkManager__cctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1408]
+ldr x16, [x16, #1400]
 .word 0xf9000bb0
 .word 0xf9400a11
 .word 0xf9000fb1
@@ -11919,7 +11613,7 @@ ldr x16, [x16, #1408]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1416]
+ldr x0, [x16, #1408]
 bl _p_30
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -11930,7 +11624,7 @@ bl _p_30
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1224]
+ldr x0, [x16, #1216]
 .word 0xf9000001
 .word 0xf9400bb1
 .word 0xf9409631
@@ -11956,7 +11650,7 @@ bpsdkBinding_BRPtouchPrinter_get_ClassHandle:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1424]
+ldr x16, [x16, #1416]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -11975,7 +11669,7 @@ ldr x16, [x16, #1424]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1432]
+ldr x0, [x16, #1424]
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xf94013b1
@@ -12008,7 +11702,7 @@ bpsdkBinding_BRPtouchPrinter__ctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1440]
+ldr x16, [x16, #1432]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -12052,7 +11746,7 @@ bl _p_17
 .word 0xf9402fa1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf9002ba0
 .word 0xf9400fb1
@@ -12158,7 +11852,7 @@ bpsdkBinding_BRPtouchPrinter__ctor_Foundation_NSObjectFlag:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1448]
+ldr x16, [x16, #1440]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -12198,7 +11892,7 @@ bl _p_17
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -12252,7 +11946,7 @@ bpsdkBinding_BRPtouchPrinter__ctor_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1456]
+ldr x16, [x16, #1448]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -12292,7 +11986,7 @@ bl _p_22
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -12347,7 +12041,7 @@ bpsdkBinding_BRPtouchPrinter__ctor_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1464]
+ldr x16, [x16, #1456]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -12390,13 +12084,13 @@ bl _p_17
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2815fe1
-.word 0xd2815fe1
+.word 0xd2815ea1
+.word 0xd2815ea1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -12430,7 +12124,7 @@ bl _p_35
 .word 0xf94037a1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90033a0
 .word 0xf94017b1
@@ -12503,7 +12197,7 @@ bl _p_46
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x2, [x16, #1472]
+ldr x2, [x16, #1464]
 .word 0xaa1903e0
 bl _p_21
 .word 0xf94017b1
@@ -12590,7 +12284,7 @@ bpsdkBinding_BRPtouchPrinter__ctor_string_bpsdkBinding_ConnectionType:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1480]
+ldr x16, [x16, #1472]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -12633,13 +12327,13 @@ bl _p_17
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd28074e1
-.word 0xd28074e1
+.word 0xd28073a1
+.word 0xd28073a1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -12673,7 +12367,7 @@ bl _p_35
 .word 0xf9403fa1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf9003ba0
 .word 0xf9401bb1
@@ -12759,7 +12453,7 @@ bl _p_55
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x2, [x16, #1488]
+ldr x2, [x16, #1480]
 .word 0xaa1803e0
 bl _p_21
 .word 0xf9401bb1
@@ -12774,166 +12468,18 @@ bl _p_21
 .word 0xf942f231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9430231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9431231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9432231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9433231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9434231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9435231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9436231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9437231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9438231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9439231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf943a231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf943b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf943c231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf943d231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf943e231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf943f231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9440231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9441231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9442231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9443231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9444231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9445231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9446231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9447231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9448231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9449231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf944a231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf944b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf944c231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf944d231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf944e231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf944f231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9450231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9451231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9452231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9453231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401bb1
-.word 0xf9454231
-.word 0xb4000051
-.word 0xd63f0220
 .word 0xaa1703e0
 bl _p_36
 .word 0xf9401bb1
-.word 0xf9455a31
+.word 0xf9430a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf9456a31
+.word 0xf9431a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401bb1
-.word 0xf9457a31
+.word 0xf9432a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xa94163b7
@@ -12954,7 +12500,7 @@ bpsdkBinding_BRPtouchPrinter_CancelPrinting:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1496]
+ldr x16, [x16, #1488]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -13035,7 +12581,7 @@ bpsdkBinding_BRPtouchPrinter_EndCommunication:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1504]
+ldr x16, [x16, #1496]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -13109,7 +12655,7 @@ bpsdkBinding_BRPtouchPrinter_EndPrint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1512]
+ldr x16, [x16, #1504]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -13186,7 +12732,7 @@ bpsdkBinding_BRPtouchPrinter_GetMediaFileVersion_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1520]
+ldr x16, [x16, #1512]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -13214,13 +12760,13 @@ ldr x16, [x16, #1520]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2817ae1
-.word 0xd2817ae1
+.word 0xd28179a1
+.word 0xd28179a1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -13371,7 +12917,7 @@ bpsdkBinding_BRPtouchPrinter_GetPTStatus_bpsdkBinding_PTSTATUSINFO:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1528]
+ldr x16, [x16, #1520]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -13486,7 +13032,7 @@ bpsdkBinding_BRPtouchPrinter_GetPrinterSettings_Foundation_NSDictionary__Foundat
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1536]
+ldr x16, [x16, #1528]
 .word 0xf90027b0
 .word 0xf9400a11
 .word 0xf9002bb1
@@ -13515,13 +13061,13 @@ ldr x16, [x16, #1536]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd28185a1
-.word 0xd28185a1
+.word 0xd2818461
+.word 0xd2818461
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -13688,7 +13234,7 @@ bl _p_59
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x15, [x16, #1544]
+ldr x15, [x16, #1536]
 bl _p_60
 .word 0xf9003ba0
 .word 0xf94027b1
@@ -13751,7 +13297,7 @@ bpsdkBinding_BRPtouchPrinter_GetStatus_bpsdkBinding_BRPtouchPrinterStatus_:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1552]
+ldr x16, [x16, #1544]
 .word 0xf9001fb0
 .word 0xf9400a11
 .word 0xf90023b1
@@ -13882,7 +13428,7 @@ bl _p_59
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x15, [x16, #1560]
+ldr x15, [x16, #1552]
 bl _p_62
 .word 0xf90033a0
 .word 0xf9401fb1
@@ -13944,7 +13490,7 @@ bpsdkBinding_BRPtouchPrinter_GetSystemReport_string_:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1568]
+ldr x16, [x16, #1560]
 .word 0xf9001fb0
 .word 0xf9400a11
 .word 0xf90023b1
@@ -14130,7 +13676,7 @@ bpsdkBinding_BRPtouchPrinter_IsPrinterReady:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1576]
+ldr x16, [x16, #1568]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -14215,7 +13761,7 @@ bpsdkBinding_BRPtouchPrinter_PrintFiles_Foundation_NSObject___int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1584]
+ldr x16, [x16, #1576]
 .word 0xf9001fb0
 .word 0xf9400a11
 .word 0xf90023b1
@@ -14243,13 +13789,13 @@ ldr x16, [x16, #1584]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2819961
-.word 0xd2819961
+.word 0xd2819821
+.word 0xd2819821
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -14412,7 +13958,7 @@ bpsdkBinding_BRPtouchPrinter_PrintImage_CoreGraphics_CGImage_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1592]
+ldr x16, [x16, #1584]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -14438,13 +13984,13 @@ ldr x16, [x16, #1592]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281a021
-.word 0xd281a021
+.word 0xd2819ee1
+.word 0xd2819ee1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -14536,7 +14082,7 @@ bpsdkBinding_BRPtouchPrinter_PrintPDFAtPath_string_Foundation_NSObject___System_
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1600]
+ldr x16, [x16, #1592]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -14565,13 +14111,13 @@ ldr x16, [x16, #1600]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281a6a1
-.word 0xd281a6a1
+.word 0xd281a561
+.word 0xd281a561
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -14589,13 +14135,13 @@ bl _p_24
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281a8a1
-.word 0xd281a8a1
+.word 0xd281a761
+.word 0xd281a761
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -14794,7 +14340,7 @@ bpsdkBinding_BRPtouchPrinter_SendData_Foundation_NSData:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1608]
+ldr x16, [x16, #1600]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -14820,13 +14366,13 @@ ldr x16, [x16, #1608]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281b321
-.word 0xd281b321
+.word 0xd281b1e1
+.word 0xd281b1e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -14912,7 +14458,7 @@ bpsdkBinding_BRPtouchPrinter_SendDataEx_Foundation_NSData:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1616]
+ldr x16, [x16, #1608]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -14938,13 +14484,13 @@ ldr x16, [x16, #1616]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281b321
-.word 0xd281b321
+.word 0xd281b1e1
+.word 0xd281b1e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -15031,7 +14577,7 @@ bpsdkBinding_BRPtouchPrinter_SendFile_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1624]
+ldr x16, [x16, #1616]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -15059,13 +14605,13 @@ ldr x16, [x16, #1624]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281b9e1
-.word 0xd281b9e1
+.word 0xd281b8a1
+.word 0xd281b8a1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -15208,7 +14754,7 @@ bpsdkBinding_BRPtouchPrinter_SendFileEx_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1632]
+ldr x16, [x16, #1624]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -15236,13 +14782,13 @@ ldr x16, [x16, #1632]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281b9e1
-.word 0xd281b9e1
+.word 0xd281b8a1
+.word 0xd281b8a1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -15385,7 +14931,7 @@ bpsdkBinding_BRPtouchPrinter_SendFirmwareFile_Foundation_NSObject__:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1640]
+ldr x16, [x16, #1632]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -15413,13 +14959,13 @@ ldr x16, [x16, #1640]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281c1a1
-.word 0xd281c1a1
+.word 0xd281c061
+.word 0xd281c061
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -15579,7 +15125,7 @@ bpsdkBinding_BRPtouchPrinter_SendTemplate_string_bpsdkBinding_ConnectionType:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1648]
+ldr x16, [x16, #1640]
 .word 0xf9001fb0
 .word 0xf9400a11
 .word 0xf90023b1
@@ -15607,13 +15153,13 @@ ldr x16, [x16, #1648]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281c9a1
-.word 0xd281c9a1
+.word 0xd281c861
+.word 0xd281c861
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -15695,138 +15241,14 @@ bl _p_67
 .word 0xf941ee31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf941fe31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9420e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9421e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9422e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9423e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9424e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9425e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9426e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9427e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9428e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9429e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf942ae31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf942be31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf942ce31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf942de31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf942ee31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf942fe31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9430e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9431e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9432e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9433e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9434e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9435e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9436e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9437e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9438e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf9439e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf943ae31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf943be31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf943ce31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf9401fb1
-.word 0xf943de31
-.word 0xb4000051
-.word 0xd63f0220
 .word 0xaa1703e0
 bl _p_36
 .word 0xf9401fb1
-.word 0xf943f631
+.word 0xf9420631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401fb1
-.word 0xf9440631
+.word 0xf9421631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xaa1603e0
@@ -15836,12 +15258,12 @@ bl _p_36
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9401fb1
-.word 0xf9442e31
+.word 0xf9423e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9402ba0
 .word 0xf9401fb1
-.word 0xf9444231
+.word 0xf9425231
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xa9415fb6
@@ -15865,7 +15287,7 @@ bpsdkBinding_BRPtouchPrinter_SendTemplateFile_Foundation_NSObject__:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1656]
+ldr x16, [x16, #1648]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -15893,13 +15315,13 @@ ldr x16, [x16, #1656]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281c1a1
-.word 0xd281c1a1
+.word 0xd281c061
+.word 0xd281c061
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -16056,7 +15478,7 @@ bpsdkBinding_BRPtouchPrinter_SetAutoConnectBluetooth_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1664]
+ldr x16, [x16, #1656]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -16141,7 +15563,7 @@ bpsdkBinding_BRPtouchPrinter_SetBLEAdvertiseLocalName_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1672]
+ldr x16, [x16, #1664]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -16168,13 +15590,13 @@ ldr x16, [x16, #1672]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281e0e1
-.word 0xd281e0e1
+.word 0xd281dfa1
+.word 0xd281dfa1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -16298,7 +15720,7 @@ bpsdkBinding_BRPtouchPrinter_SetCustomPaperFile_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1680]
+ldr x16, [x16, #1672]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -16326,13 +15748,13 @@ ldr x16, [x16, #1680]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281ec21
-.word 0xd281ec21
+.word 0xd281eae1
+.word 0xd281eae1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -16476,7 +15898,7 @@ bpsdkBinding_BRPtouchPrinter_SetIPAddress_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1688]
+ldr x16, [x16, #1680]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -16503,13 +15925,13 @@ ldr x16, [x16, #1688]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281f421
-.word 0xd281f421
+.word 0xd281f2e1
+.word 0xd281f2e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -16631,7 +16053,7 @@ bpsdkBinding_BRPtouchPrinter_SetInterface_bpsdkBinding_ConnectionType:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1696]
+ldr x16, [x16, #1688]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -16720,7 +16142,7 @@ bpsdkBinding_BRPtouchPrinter_SetPrintInfo_bpsdkBinding_BRPtouchPrintInfo:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1704]
+ldr x16, [x16, #1696]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -16746,13 +16168,13 @@ ldr x16, [x16, #1704]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd281fca1
-.word 0xd281fca1
+.word 0xd281fb61
+.word 0xd281fb61
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -16832,7 +16254,7 @@ bpsdkBinding_BRPtouchPrinter_SetPrinterName_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1712]
+ldr x16, [x16, #1704]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -16860,13 +16282,13 @@ ldr x16, [x16, #1712]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd28074e1
-.word 0xd28074e1
+.word 0xd28073a1
+.word 0xd28073a1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -17009,7 +16431,7 @@ bpsdkBinding_BRPtouchPrinter_SetPrinterSettings_Foundation_NSDictionary:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1720]
+ldr x16, [x16, #1712]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -17035,13 +16457,13 @@ ldr x16, [x16, #1720]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd28202a1
-.word 0xd28202a1
+.word 0xd2820161
+.word 0xd2820161
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -17128,7 +16550,7 @@ bpsdkBinding_BRPtouchPrinter_SetupForBluetoothDeviceWithSerialNumber_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1728]
+ldr x16, [x16, #1720]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -17155,13 +16577,13 @@ ldr x16, [x16, #1728]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2820ba1
-.word 0xd2820ba1
+.word 0xd2820a61
+.word 0xd2820a61
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -17282,7 +16704,7 @@ bpsdkBinding_BRPtouchPrinter_StartCommunication:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1736]
+ldr x16, [x16, #1728]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -17363,7 +16785,7 @@ bpsdkBinding_BRPtouchPrinter_StartPrint:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1744]
+ldr x16, [x16, #1736]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -17444,7 +16866,7 @@ bpsdkBinding_BRPtouchPrinter_get_BatteryStatus:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1752]
+ldr x16, [x16, #1744]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -17526,7 +16948,7 @@ bpsdkBinding_BRPtouchPrinter_get_CurrentLabelParam:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1760]
+ldr x16, [x16, #1752]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -17582,7 +17004,7 @@ bl _p_20
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x15, [x16, #1768]
+ldr x15, [x16, #1760]
 bl _p_69
 .word 0xf9002ba0
 .word 0xf94013b1
@@ -17660,7 +17082,7 @@ bpsdkBinding_BRPtouchPrinter_get_DeviceSerialNumber:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1776]
+ldr x16, [x16, #1768]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -17747,7 +17169,7 @@ bpsdkBinding_BRPtouchPrinter_get_FirmVersion:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1784]
+ldr x16, [x16, #1776]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -17834,7 +17256,7 @@ bpsdkBinding_BRPtouchPrinter_get_IsAutoConnectBluetooth:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1792]
+ldr x16, [x16, #1784]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -17916,7 +17338,7 @@ bpsdkBinding_BRPtouchPrinter_get_LabelInfoStatus:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1800]
+ldr x16, [x16, #1792]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -17972,7 +17394,7 @@ bl _p_20
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x15, [x16, #1808]
+ldr x15, [x16, #1800]
 bl _p_70
 .word 0xf9002ba0
 .word 0xf94013b1
@@ -18050,7 +17472,7 @@ bpsdkBinding_BRPtouchPrinter_get_MediaVersion:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1816]
+ldr x16, [x16, #1808]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -18137,7 +17559,7 @@ bpsdkBinding_BRPtouchPrinter_get_ModelName:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1824]
+ldr x16, [x16, #1816]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -18224,7 +17646,7 @@ bpsdkBinding_BRPtouchPrinter_get_PrinterBootMode:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1832]
+ldr x16, [x16, #1824]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -18306,7 +17728,7 @@ bpsdkBinding_BRPtouchPrinter_get_SupportPaperArray:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1840]
+ldr x16, [x16, #1832]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -18362,7 +17784,7 @@ bl _p_20
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x15, [x16, #568]
+ldr x15, [x16, #560]
 bl _p_32
 .word 0xf9002ba0
 .word 0xf94013b1
@@ -18439,7 +17861,7 @@ bpsdkBinding_BRPtouchPrinter__cctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1848]
+ldr x16, [x16, #1840]
 .word 0xf9000bb0
 .word 0xf9400a11
 .word 0xf9000fb1
@@ -18458,7 +17880,7 @@ ldr x16, [x16, #1848]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1856]
+ldr x0, [x16, #1848]
 bl _p_30
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -18469,7 +17891,7 @@ bl _p_30
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1432]
+ldr x0, [x16, #1424]
 .word 0xf9000001
 .word 0xf9400bb1
 .word 0xf9409631
@@ -18495,7 +17917,7 @@ bpsdkBinding_BRPtouchPrinterData_get_ClassHandle:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1864]
+ldr x16, [x16, #1856]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -18514,7 +17936,7 @@ ldr x16, [x16, #1864]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1872]
+ldr x0, [x16, #1864]
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xf94013b1
@@ -18547,7 +17969,7 @@ bpsdkBinding_BRPtouchPrinterData__ctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1880]
+ldr x16, [x16, #1872]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -18591,7 +18013,7 @@ bl _p_17
 .word 0xf9402fa1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf9002ba0
 .word 0xf9400fb1
@@ -18697,7 +18119,7 @@ bpsdkBinding_BRPtouchPrinterData__ctor_Foundation_NSObjectFlag:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1888]
+ldr x16, [x16, #1880]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -18737,7 +18159,7 @@ bl _p_17
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -18791,7 +18213,7 @@ bpsdkBinding_BRPtouchPrinterData__ctor_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1896]
+ldr x16, [x16, #1888]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -18831,7 +18253,7 @@ bl _p_22
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -18883,7 +18305,7 @@ bpsdkBinding_BRPtouchPrinterData_PrinterList:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1904]
+ldr x16, [x16, #1896]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -18938,7 +18360,7 @@ bl _p_20
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x15, [x16, #568]
+ldr x15, [x16, #560]
 bl _p_32
 .word 0xf9001ba0
 .word 0xf9400fb1
@@ -18973,7 +18395,7 @@ bpsdkBinding_BRPtouchPrinterData__cctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1912]
+ldr x16, [x16, #1904]
 .word 0xf9000bb0
 .word 0xf9400a11
 .word 0xf9000fb1
@@ -18992,7 +18414,7 @@ ldr x16, [x16, #1912]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1920]
+ldr x0, [x16, #1912]
 bl _p_30
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -19003,7 +18425,7 @@ bl _p_30
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1872]
+ldr x0, [x16, #1864]
 .word 0xf9000001
 .word 0xf9400bb1
 .word 0xf9409631
@@ -19029,7 +18451,7 @@ bpsdkBinding_BRPtouchPrinterKit_get_ClassHandle:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1928]
+ldr x16, [x16, #1920]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -19048,7 +18470,7 @@ ldr x16, [x16, #1928]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1936]
+ldr x0, [x16, #1928]
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xf94013b1
@@ -19081,7 +18503,7 @@ bpsdkBinding_BRPtouchPrinterKit__ctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1944]
+ldr x16, [x16, #1936]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -19125,7 +18547,7 @@ bl _p_17
 .word 0xf9402fa1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf9002ba0
 .word 0xf9400fb1
@@ -19231,7 +18653,7 @@ bpsdkBinding_BRPtouchPrinterKit__ctor_Foundation_NSObjectFlag:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1952]
+ldr x16, [x16, #1944]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -19271,7 +18693,7 @@ bl _p_17
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -19325,7 +18747,7 @@ bpsdkBinding_BRPtouchPrinterKit__ctor_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1960]
+ldr x16, [x16, #1952]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -19365,7 +18787,7 @@ bl _p_22
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -19416,7 +18838,7 @@ bpsdkBinding_BRPtouchPrinterKit__cctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1968]
+ldr x16, [x16, #1960]
 .word 0xf9000bb0
 .word 0xf9400a11
 .word 0xf9000fb1
@@ -19435,7 +18857,7 @@ ldr x16, [x16, #1968]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1976]
+ldr x0, [x16, #1968]
 bl _p_30
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -19446,7 +18868,7 @@ bl _p_30
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1936]
+ldr x0, [x16, #1928]
 .word 0xf9000001
 .word 0xf9400bb1
 .word 0xf9409631
@@ -19472,7 +18894,7 @@ bpsdkBinding_BRPtouchPrinterStatus_get_ClassHandle:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #1984]
+ldr x16, [x16, #1976]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -19491,7 +18913,7 @@ ldr x16, [x16, #1984]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1992]
+ldr x0, [x16, #1984]
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xf94013b1
@@ -19524,7 +18946,7 @@ bpsdkBinding_BRPtouchPrinterStatus__ctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2000]
+ldr x16, [x16, #1992]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -19568,7 +18990,7 @@ bl _p_17
 .word 0xf9402fa1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf9002ba0
 .word 0xf9400fb1
@@ -19674,7 +19096,7 @@ bpsdkBinding_BRPtouchPrinterStatus__ctor_Foundation_NSObjectFlag:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2008]
+ldr x16, [x16, #2000]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -19714,7 +19136,7 @@ bl _p_17
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -19768,7 +19190,7 @@ bpsdkBinding_BRPtouchPrinterStatus__ctor_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2016]
+ldr x16, [x16, #2008]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -19808,7 +19230,7 @@ bl _p_22
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -19860,7 +19282,7 @@ bpsdkBinding_BRPtouchPrinterStatus_get_BatteryLevel:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2024]
+ldr x16, [x16, #2016]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -19942,7 +19364,7 @@ bpsdkBinding_BRPtouchPrinterStatus_set_BatteryLevel_int16:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2032]
+ldr x16, [x16, #2024]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -20017,7 +19439,7 @@ bpsdkBinding_BRPtouchPrinterStatus_get_BatteryResidualQuantityLevel:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2040]
+ldr x16, [x16, #2032]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -20099,7 +19521,7 @@ bpsdkBinding_BRPtouchPrinterStatus_set_BatteryResidualQuantityLevel_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2048]
+ldr x16, [x16, #2040]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -20175,7 +19597,7 @@ bpsdkBinding_BRPtouchPrinterStatus_get_IsACConnected:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2056]
+ldr x16, [x16, #2048]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -20250,106 +19672,6 @@ bl _p_37
 .word 0xf9414231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9415231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9416231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9417231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9418231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9419231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941a231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941c231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941d231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941e231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941f231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9420231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9421231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9422231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9423231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9424231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9425231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9426231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9427231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9428231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9429231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942a231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942c231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942d231
-.word 0xb4000051
-.word 0xd63f0220
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017b1
@@ -20357,12 +19679,12 @@ bl _p_37
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94013b1
-.word 0xf942fa31
+.word 0xf9416a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94023a0
 .word 0xf94013b1
-.word 0xf9430e31
+.word 0xf9417e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400bb9
@@ -20383,7 +19705,7 @@ bpsdkBinding_BRPtouchPrinterStatus_set_IsACConnected_bpsdkBinding_BRPtouchPrinte
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2064]
+ldr x16, [x16, #2056]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -20471,7 +19793,7 @@ bpsdkBinding_BRPtouchPrinterStatus_get_IsBatteryMounted:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2072]
+ldr x16, [x16, #2064]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -20546,106 +19868,6 @@ bl _p_37
 .word 0xf9414231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9415231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9416231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9417231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9418231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9419231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941a231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941c231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941d231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941e231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941f231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9420231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9421231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9422231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9423231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9424231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9425231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9426231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9427231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9428231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9429231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942a231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942b231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942c231
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942d231
-.word 0xb4000051
-.word 0xd63f0220
 .word 0xf94027a0
 .word 0xf90023a0
 .word 0xf94017b1
@@ -20653,12 +19875,12 @@ bl _p_37
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94013b1
-.word 0xf942fa31
+.word 0xf9416a31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94023a0
 .word 0xf94013b1
-.word 0xf9430e31
+.word 0xf9417e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400bb9
@@ -20679,7 +19901,7 @@ bpsdkBinding_BRPtouchPrinterStatus_set_IsBatteryMounted_bpsdkBinding_BRPtouchPri
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2080]
+ldr x16, [x16, #2072]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -20766,7 +19988,7 @@ bpsdkBinding_BRPtouchPrinterStatus_get_MaxOfBatteryResidualQuantityLevel:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2088]
+ldr x16, [x16, #2080]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -20848,7 +20070,7 @@ bpsdkBinding_BRPtouchPrinterStatus_set_MaxOfBatteryResidualQuantityLevel_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2096]
+ldr x16, [x16, #2088]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -20924,7 +20146,7 @@ bpsdkBinding_BRPtouchPrinterStatus_get_StatusInfo:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2104]
+ldr x16, [x16, #2096]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -21026,242 +20248,6 @@ bl _p_74
 .word 0xf941ae31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941be31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941ce31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941de31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941ee31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf941fe31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9420e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9421e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9422e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9423e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9424e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9425e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9426e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9427e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9428e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9429e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942ae31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942be31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942ce31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942de31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942ee31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf942fe31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9430e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9431e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9432e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9433e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9434e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9435e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9436e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9437e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9438e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9439e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf943ae31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf943be31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf943ce31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf943de31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf943ee31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf943fe31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9440e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9441e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9442e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9443e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9444e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9445e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9446e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9447e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9448e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9449e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf944ae31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf944be31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf944ce31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf944de31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf944ee31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf944fe31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9450e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9451e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9452e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9453e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9454e31
-.word 0xb4000051
-.word 0xd63f0220
-.word 0xf94013b1
-.word 0xf9455e31
-.word 0xb4000051
-.word 0xd63f0220
 .word 0x910263a0
 .word 0x9100e3a0
 .word 0xf9404fa0
@@ -21281,7 +20267,7 @@ bl _p_74
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94013b1
-.word 0xf945b631
+.word 0xf9420631
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf9400ba0
@@ -21291,7 +20277,7 @@ bl _p_74
 .word 0xd2800602
 bl _mono_gc_wbarrier_range_copy
 .word 0xf94013b1
-.word 0xf945de31
+.word 0xf9422e31
 .word 0xb4000051
 .word 0xd63f0220
 .word 0x910003bf
@@ -21311,7 +20297,7 @@ bpsdkBinding_BRPtouchPrinterStatus_set_StatusInfo_bpsdkBinding_PTSTATUSINFO:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2112]
+ldr x16, [x16, #2104]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -21413,7 +20399,7 @@ bpsdkBinding_BRPtouchPrinterStatus__cctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2120]
+ldr x16, [x16, #2112]
 .word 0xf9000bb0
 .word 0xf9400a11
 .word 0xf9000fb1
@@ -21432,7 +20418,7 @@ ldr x16, [x16, #2120]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2128]
+ldr x0, [x16, #2120]
 bl _p_30
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -21443,7 +20429,7 @@ bl _p_30
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #1992]
+ldr x0, [x16, #1984]
 .word 0xf9000001
 .word 0xf9400bb1
 .word 0xf9409631
@@ -21469,7 +20455,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_ClassHandle:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2136]
+ldr x16, [x16, #2128]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -21488,7 +20474,7 @@ ldr x16, [x16, #2136]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2144]
+ldr x0, [x16, #2136]
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xf94013b1
@@ -21521,7 +20507,7 @@ bpsdkBinding_BRPtouchPrintInfo__ctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2152]
+ldr x16, [x16, #2144]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -21565,7 +20551,7 @@ bl _p_17
 .word 0xf9402fa1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf9002ba0
 .word 0xf9400fb1
@@ -21671,7 +20657,7 @@ bpsdkBinding_BRPtouchPrintInfo__ctor_Foundation_NSObjectFlag:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2160]
+ldr x16, [x16, #2152]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -21711,7 +20697,7 @@ bl _p_17
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -21765,7 +20751,7 @@ bpsdkBinding_BRPtouchPrintInfo__ctor_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2168]
+ldr x16, [x16, #2160]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -21805,7 +20791,7 @@ bl _p_22
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9413430
+.word 0xf9415830
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -21857,7 +20843,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_BBanishMargin:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2176]
+ldr x16, [x16, #2168]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -21939,7 +20925,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_BBanishMargin_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2184]
+ldr x16, [x16, #2176]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -22014,7 +21000,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_BBidirection:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2192]
+ldr x16, [x16, #2184]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -22096,7 +21082,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_BBidirection_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2200]
+ldr x16, [x16, #2192]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -22171,7 +21157,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_BCutMark:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2208]
+ldr x16, [x16, #2200]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -22253,7 +21239,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_BCutMark_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2216]
+ldr x16, [x16, #2208]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -22328,7 +21314,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_BEndcut:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2224]
+ldr x16, [x16, #2216]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -22410,7 +21396,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_BEndcut_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2232]
+ldr x16, [x16, #2224]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -22485,7 +21471,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_BHalfCut:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2240]
+ldr x16, [x16, #2232]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -22567,7 +21553,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_BHalfCut_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2248]
+ldr x16, [x16, #2240]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -22642,7 +21628,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_BMode9:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2256]
+ldr x16, [x16, #2248]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -22724,7 +21710,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_BMode9_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2264]
+ldr x16, [x16, #2256]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -22799,7 +21785,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_BOverWrite:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2272]
+ldr x16, [x16, #2264]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -22881,7 +21867,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_BOverWrite_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2280]
+ldr x16, [x16, #2272]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -22956,7 +21942,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_BPeel:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2288]
+ldr x16, [x16, #2280]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -23038,7 +22024,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_BPeel_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2296]
+ldr x16, [x16, #2288]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -23113,7 +22099,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_BRawMode:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2304]
+ldr x16, [x16, #2296]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -23195,7 +22181,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_BRawMode_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2312]
+ldr x16, [x16, #2304]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -23270,7 +22256,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_BRotate180:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2320]
+ldr x16, [x16, #2312]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -23352,7 +22338,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_BRotate180_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2328]
+ldr x16, [x16, #2320]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -23427,7 +22413,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_BSpecialTape:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2336]
+ldr x16, [x16, #2328]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -23509,7 +22495,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_BSpecialTape_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2344]
+ldr x16, [x16, #2336]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -23584,7 +22570,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_BUseLegacyHalftoneEngine:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2352]
+ldr x16, [x16, #2344]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -23666,7 +22652,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_BUseLegacyHalftoneEngine_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2360]
+ldr x16, [x16, #2352]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -23741,7 +22727,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NAutoCutCopies:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2368]
+ldr x16, [x16, #2360]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -23823,7 +22809,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NAutoCutCopies_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2376]
+ldr x16, [x16, #2368]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -23898,7 +22884,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NAutoCutFlag:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2384]
+ldr x16, [x16, #2376]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -23980,7 +22966,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NAutoCutFlag_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2392]
+ldr x16, [x16, #2384]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -24055,7 +23041,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NCustomFeed:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2400]
+ldr x16, [x16, #2392]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -24137,7 +23123,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NCustomFeed_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2408]
+ldr x16, [x16, #2400]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -24212,7 +23198,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NCustomLength:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2416]
+ldr x16, [x16, #2408]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -24294,7 +23280,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NCustomLength_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2424]
+ldr x16, [x16, #2416]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -24369,7 +23355,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NCustomWidth:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2432]
+ldr x16, [x16, #2424]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -24451,7 +23437,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NCustomWidth_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2440]
+ldr x16, [x16, #2432]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -24526,7 +23512,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NDensity:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2448]
+ldr x16, [x16, #2440]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -24608,7 +23594,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NDensity_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2456]
+ldr x16, [x16, #2448]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -24683,7 +23669,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NExtFlag:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2464]
+ldr x16, [x16, #2456]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -24765,7 +23751,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NExtFlag_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2472]
+ldr x16, [x16, #2464]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -24840,7 +23826,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NHalftone:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2480]
+ldr x16, [x16, #2472]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -24922,7 +23908,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NHalftone_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2488]
+ldr x16, [x16, #2480]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -24997,7 +23983,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NHalftoneBinaryThreshold:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2496]
+ldr x16, [x16, #2488]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -25079,7 +24065,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NHalftoneBinaryThreshold_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2504]
+ldr x16, [x16, #2496]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -25154,7 +24140,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NHorizontalAlign:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2512]
+ldr x16, [x16, #2504]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -25236,7 +24222,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NHorizontalAlign_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2520]
+ldr x16, [x16, #2512]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -25311,7 +24297,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NLabelMargine:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2528]
+ldr x16, [x16, #2520]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -25393,7 +24379,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NLabelMargine_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2536]
+ldr x16, [x16, #2528]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -25468,7 +24454,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NLeftMargin:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2544]
+ldr x16, [x16, #2536]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -25550,7 +24536,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NLeftMargin_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2552]
+ldr x16, [x16, #2544]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -25625,7 +24611,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NOrientation:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2560]
+ldr x16, [x16, #2552]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -25707,7 +24693,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NOrientation_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2568]
+ldr x16, [x16, #2560]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -25782,7 +24768,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NPJPaperKind:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2576]
+ldr x16, [x16, #2568]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -25864,7 +24850,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NPJPaperKind_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2584]
+ldr x16, [x16, #2576]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -25939,7 +24925,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NPaperAlign:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2592]
+ldr x16, [x16, #2584]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -26021,7 +25007,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NPaperAlign_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2600]
+ldr x16, [x16, #2592]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -26096,7 +25082,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NPrintMode:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2608]
+ldr x16, [x16, #2600]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -26178,7 +25164,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NPrintMode_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2616]
+ldr x16, [x16, #2608]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -26253,7 +25239,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NPrintQuality:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2624]
+ldr x16, [x16, #2616]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -26335,7 +25321,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NPrintQuality_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2632]
+ldr x16, [x16, #2624]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -26410,7 +25396,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NRollPrinterCase:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2640]
+ldr x16, [x16, #2632]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -26492,7 +25478,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NRollPrinterCase_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2648]
+ldr x16, [x16, #2640]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -26567,7 +25553,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NSpeed:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2656]
+ldr x16, [x16, #2648]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -26649,7 +25635,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NSpeed_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2664]
+ldr x16, [x16, #2656]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -26724,7 +25710,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NTopMargin:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2672]
+ldr x16, [x16, #2664]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -26806,7 +25792,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NTopMargin_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2680]
+ldr x16, [x16, #2672]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -26881,7 +25867,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_NVerticalAlign:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2688]
+ldr x16, [x16, #2680]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -26963,7 +25949,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_NVerticalAlign_int:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2696]
+ldr x16, [x16, #2688]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -27038,7 +26024,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_ScaleValue:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2704]
+ldr x16, [x16, #2696]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -27119,7 +26105,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_ScaleValue_double:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2712]
+ldr x16, [x16, #2704]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -27194,7 +26180,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_StrPaperName:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2720]
+ldr x16, [x16, #2712]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -27284,7 +26270,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_StrPaperName_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2728]
+ldr x16, [x16, #2720]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -27311,13 +26297,13 @@ ldr x16, [x16, #2728]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804721
-.word 0xd2804721
+.word 0xd28045e1
+.word 0xd28045e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -27438,7 +26424,7 @@ bpsdkBinding_BRPtouchPrintInfo_get_StrSaveFilePath:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2736]
+ldr x16, [x16, #2728]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -27528,7 +26514,7 @@ bpsdkBinding_BRPtouchPrintInfo_set_StrSaveFilePath_string:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2744]
+ldr x16, [x16, #2736]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -27555,13 +26541,13 @@ ldr x16, [x16, #2744]
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804721
-.word 0xd2804721
+.word 0xd28045e1
+.word 0xd28045e1
 bl _p_23
 .word 0xaa0003e1
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
-.word 0xd2800940
+.word 0xd2800840
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_24
@@ -27681,7 +26667,7 @@ bpsdkBinding_BRPtouchPrintInfo__cctor:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2752]
+ldr x16, [x16, #2744]
 .word 0xf9000bb0
 .word 0xf9400a11
 .word 0xf9000fb1
@@ -27700,7 +26686,7 @@ ldr x16, [x16, #2752]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2760]
+ldr x0, [x16, #2752]
 bl _p_30
 .word 0xf9001ba0
 .word 0xf9400bb1
@@ -27711,7 +26697,7 @@ bl _p_30
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2144]
+ldr x0, [x16, #2136]
 .word 0xf9000001
 .word 0xf9400bb1
 .word 0xf9409631
@@ -27743,7 +26729,7 @@ wrapper_delegate_invoke__Module_invoke_void_intptr_intptr_intptr_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2768]
+ldr x16, [x16, #2760]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -27767,7 +26753,7 @@ ldr x16, [x16, #2768]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -27947,7 +26933,7 @@ bl _p_24
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd28010e0
+.word 0xd2800fe0
 .word 0xaa1103e1
 bl _p_4
 
@@ -27969,7 +26955,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_i
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2784]
+ldr x16, [x16, #2776]
 .word 0xf9002fb0
 .word 0xf9400a11
 .word 0xf90033b1
@@ -28111,7 +27097,7 @@ wrapper_delegate_end_invoke__Module_end_invoke_void__this___IAsyncResult_System_
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2792]
+ldr x16, [x16, #2784]
 .word 0xf90023b0
 .word 0xf9400a11
 .word 0xf90027b1
@@ -28208,7 +27194,7 @@ wrapper_managed_to_native_ObjCRuntime_Trampolines_DBRBLEManagerSearchCompletionH
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2800]
+ldr x16, [x16, #2792]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -28257,7 +27243,7 @@ ldr x0, [x16, #112]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x4, [x16, #2808]
+ldr x4, [x16, #2800]
 .word 0xeb04007f
 .word 0x10000011
 .word 0x54000661
@@ -28271,7 +27257,7 @@ ldr x4, [x16, #2808]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -28312,7 +27298,7 @@ bl _p_24
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-.word 0xd2801160
+.word 0xd2801060
 .word 0xaa1103e1
 bl _p_4
 
@@ -28334,7 +27320,7 @@ wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_intptr_intptr_in
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2816]
+ldr x16, [x16, #2808]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -28358,7 +27344,7 @@ ldr x16, [x16, #2816]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -28510,7 +27496,7 @@ bl _p_24
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd28010e0
+.word 0xd2800fe0
 .word 0xaa1103e1
 bl _p_4
 
@@ -28531,7 +27517,7 @@ wrapper_delegate_invoke__Module_invoke_void_BRPtouchDeviceInfo_bpsdkBinding_BRPt
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2824]
+ldr x16, [x16, #2816]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -28555,7 +27541,7 @@ ldr x16, [x16, #2824]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9402bb1
@@ -28729,7 +27715,7 @@ bl _p_24
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd28010e0
+.word 0xd2800fe0
 .word 0xaa1103e1
 bl _p_4
 
@@ -28750,7 +27736,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___BRPtouch
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2832]
+ldr x16, [x16, #2824]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -28883,7 +27869,7 @@ wrapper_managed_to_native_ObjCRuntime_Trampolines__Block_copy_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2840]
+ldr x16, [x16, #2832]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -28930,7 +27916,7 @@ bl _p_81
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf9400fb1
@@ -29004,7 +27990,7 @@ wrapper_managed_to_native_ObjCRuntime_Trampolines__Block_release_intptr:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2848]
+ldr x16, [x16, #2840]
 .word 0xf9000fb0
 .word 0xf9400a11
 .word 0xf90013b1
@@ -29049,7 +28035,7 @@ bl _p_82
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf9400fb1
@@ -29114,7 +28100,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_intptr_int
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2856]
+ldr x16, [x16, #2848]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -29162,7 +28148,7 @@ bl _p_83
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94013b1
@@ -29237,7 +28223,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_intpt
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2864]
+ldr x16, [x16, #2856]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -29285,7 +28271,7 @@ bl _p_84
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94013b1
@@ -29361,7 +28347,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_int
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2872]
+ldr x16, [x16, #2864]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -29410,7 +28396,7 @@ bl _p_85
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -29486,7 +28472,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_bool_objc_msgSend_IntPtr_intpt
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2880]
+ldr x16, [x16, #2872]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -29536,7 +28522,7 @@ bl _p_86
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -29611,7 +28597,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_void_objc_msgSend_intptr_intpt
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2888]
+ldr x16, [x16, #2880]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -29657,7 +28643,7 @@ bl _p_87
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94013b1
@@ -29723,7 +28709,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_void_objc_msgSend_IntPtr_intpt
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2896]
+ldr x16, [x16, #2888]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -29770,7 +28756,7 @@ bl _p_88
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -29835,7 +28821,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_int_objc_msgSend_intptr_intptr
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2904]
+ldr x16, [x16, #2896]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -29884,7 +28870,7 @@ bl _p_89
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94013b1
@@ -29959,7 +28945,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_Int64_objc_msgSend_intptr_intp
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2912]
+ldr x16, [x16, #2904]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -30007,7 +28993,7 @@ bl _p_90
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94013b1
@@ -30083,7 +29069,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_void_objc_msgSend_int_intptr_i
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2920]
+ldr x16, [x16, #2912]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -30130,7 +29116,7 @@ bl _p_91
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -30196,7 +29182,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_void_objc_msgSend_Int64_intptr
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2928]
+ldr x16, [x16, #2920]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -30243,7 +29229,7 @@ bl _p_92
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -30308,7 +29294,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_UInt32_objc_msgSend_intptr_int
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2936]
+ldr x16, [x16, #2928]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -30356,7 +29342,7 @@ bl _p_93
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94013b1
@@ -30432,7 +29418,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_void_objc_msgSend_UInt32_intpt
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2944]
+ldr x16, [x16, #2936]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -30479,7 +29465,7 @@ bl _p_94
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -30544,7 +29530,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_float_objc_msgSend_intptr_intp
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2952]
+ldr x16, [x16, #2944]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -30596,7 +29582,7 @@ bl _p_95
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94013b1
@@ -30675,7 +29661,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_void_objc_msgSend_float_intptr
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2960]
+ldr x16, [x16, #2952]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -30724,7 +29710,7 @@ bl _p_96
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -30789,7 +29775,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_bool_objc_msgSend_intptr_intpt
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2968]
+ldr x16, [x16, #2960]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -30838,7 +29824,7 @@ bl _p_97
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94013b1
@@ -30914,7 +29900,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_void_objc_msgSend_bool_intptr_
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2976]
+ldr x16, [x16, #2968]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -30978,7 +29964,7 @@ bl _p_98
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -31044,7 +30030,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_int_objc_msgSend_int_intptr_in
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2984]
+ldr x16, [x16, #2976]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -31094,7 +30080,7 @@ bl _p_99
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -31169,7 +30155,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_Double_objc_msgSend_intptr_int
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #2992]
+ldr x16, [x16, #2984]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -31218,7 +30204,7 @@ bl _p_100
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94013b1
@@ -31295,7 +30281,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_void_objc_msgSend_Double_intpt
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3000]
+ldr x16, [x16, #2992]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -31342,7 +30328,7 @@ bl _p_101
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -31409,7 +30395,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_Int
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3008]
+ldr x16, [x16, #3000]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -31459,7 +30445,7 @@ bl _p_102
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9401bb1
@@ -31534,7 +30520,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_int_objc_msgSend_PTSTATUSINFO_
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3016]
+ldr x16, [x16, #3008]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -32459,7 +31445,7 @@ bl _p_104
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf94017b1
@@ -32490,7 +31476,7 @@ bl _p_24
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #3024]
+ldr x0, [x16, #3016]
 .word 0xaa1403e1
 .word 0xaa1403e1
 bl _p_105
@@ -32548,7 +31534,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_int_objc_msgSend_ref_IntPtr_in
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3032]
+ldr x16, [x16, #3024]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -32598,7 +31584,7 @@ bl _p_106
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -32675,7 +31661,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_int_in
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3040]
+ldr x16, [x16, #3032]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -32726,7 +31712,7 @@ bl _p_107
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9401bb1
@@ -32802,7 +31788,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_Int64_
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3048]
+ldr x16, [x16, #3040]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -32853,7 +31839,7 @@ bl _p_108
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9401bb1
@@ -32928,7 +31914,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_intptr
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3056]
+ldr x16, [x16, #3048]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -32978,7 +31964,7 @@ bl _p_109
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -33057,7 +32043,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_IntPtr
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3064]
+ldr x16, [x16, #3056]
 .word 0xf90023b0
 .word 0xf9400a11
 .word 0xf90027b1
@@ -33110,7 +32096,7 @@ bl _p_110
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94023b1
@@ -33187,7 +32173,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_int_objc_msgSend_bool_intptr_i
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3072]
+ldr x16, [x16, #3064]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -33254,7 +32240,7 @@ bl _p_111
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -33332,7 +32318,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_int_objc_msgSend_ref_IntPtr_In
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3080]
+ldr x16, [x16, #3072]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -33383,7 +32369,7 @@ bl _p_112
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf9401bb1
@@ -33458,7 +32444,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_PTSTATUSINFO_objc_msgSend_intp
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3088]
+ldr x16, [x16, #3080]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -34225,7 +33211,7 @@ bl _p_113
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #3096]
+ldr x0, [x16, #3088]
 .word 0xd2800081
 bl _p_114
 .word 0xf940bfa1
@@ -34306,7 +33292,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #3096]
+ldr x0, [x16, #3088]
 .word 0xd2800041
 bl _p_114
 .word 0xf940bba1
@@ -34372,7 +33358,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf94017b1
@@ -34467,7 +33453,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_void_objc_msgSend_PTSTATUSINFO
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3104]
+ldr x16, [x16, #3096]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -35389,7 +34375,7 @@ bl _p_115
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000240
 .word 0xf94017b1
@@ -35420,7 +34406,7 @@ bl _p_24
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #3024]
+ldr x0, [x16, #3016]
 .word 0xaa1503e1
 .word 0xaa1503e1
 bl _p_105
@@ -35467,7 +34453,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_short_objc_msgSend_intptr_intp
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3112]
+ldr x16, [x16, #3104]
 .word 0xf90013b0
 .word 0xf9400a11
 .word 0xf90017b1
@@ -35516,7 +34502,7 @@ bl _p_116
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94013b1
@@ -35592,7 +34578,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_void_objc_msgSend_short_intptr
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3120]
+ldr x16, [x16, #3112]
 .word 0xf90017b0
 .word 0xf9400a11
 .word 0xf9001bb1
@@ -35639,7 +34625,7 @@ bl _p_117
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000260
 .word 0xf94017b1
@@ -35695,7 +34681,7 @@ wrapper_native_to_managed_ObjCRuntime_Trampolines_SDBRBLEManagerSearchCompletion
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3128]
+ldr x16, [x16, #3120]
 .word 0xf9001bb0
 .word 0xf9400a11
 .word 0xf9001fb1
@@ -35748,7 +34734,7 @@ ldr x1, [x16, #128]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #2776]
+ldr x0, [x16, #2768]
 .word 0xb9400000
 .word 0x34000160
 bl _p_78
@@ -35842,7 +34828,7 @@ wrapper_unknown_bpsdkBinding_PTSTATUSINFO_StructureToPtr_object_intptr_bool:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3136]
+ldr x16, [x16, #3128]
 .word 0xf90027b0
 .word 0xf9400a11
 .word 0xf9002bb1
@@ -36719,7 +35705,7 @@ wrapper_unknown_bpsdkBinding_PTSTATUSINFO_PtrToStructure_intptr_object:
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3144]
+ldr x16, [x16, #3136]
 .word 0xf9002bb0
 .word 0xf9400a11
 .word 0xf9002fb1
@@ -36758,7 +35744,7 @@ ldr x16, [x16, #3144]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x2, [x16, #3024]
+ldr x2, [x16, #3016]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54006a61
@@ -37462,7 +36448,7 @@ ldr x2, [x16, #3024]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #3096]
+ldr x0, [x16, #3088]
 .word 0xd2800081
 bl _p_114
 .word 0xf9403fa1
@@ -37543,7 +36529,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x0, [x16, #3096]
+ldr x0, [x16, #3088]
 .word 0xd2800041
 bl _p_114
 .word 0xf9403ba1
@@ -37616,7 +36602,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801160
+.word 0xd2801060
 .word 0xaa1103e1
 bl _p_4
 
@@ -38050,973 +37036,973 @@ plt_intptr_op_Explicit_intptr:
 _p_1:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3160]
+ldr x16, [x16, #3152]
 br x16
-.word 3379
+.word 3375
 	.no_dead_strip plt_ObjCRuntime_BlockLiteral_get_Target
 plt_ObjCRuntime_BlockLiteral_get_Target:
 _p_2:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3168]
+ldr x16, [x16, #3160]
 br x16
-.word 3384
+.word 3380
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_bpsdkBinding_BRPtouchDeviceInfo_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_bpsdkBinding_BRPtouchDeviceInfo_intptr:
 _p_3:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3176]
+ldr x16, [x16, #3168]
 br x16
-.word 3389
+.word 3385
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_4:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3184]
+ldr x16, [x16, #3176]
 br x16
-.word 3401
+.word 3397
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_5:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3192]
+ldr x16, [x16, #3184]
 br x16
-.word 3436
+.word 3432
 	.no_dead_strip plt_intptr_op_Explicit_void_
 plt_intptr_op_Explicit_void_:
 _p_6:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3200]
+ldr x16, [x16, #3192]
 br x16
-.word 3444
+.word 3440
 	.no_dead_strip plt_ObjCRuntime_Trampolines__Block_copy_intptr
 plt_ObjCRuntime_Trampolines__Block_copy_intptr:
 _p_7:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3208]
+ldr x16, [x16, #3200]
 br x16
-.word 3449
+.word 3445
 	.no_dead_strip plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DBRBLEManagerSearchCompletionHandler
 plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DBRBLEManagerSearchCompletionHandler:
 _p_8:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3216]
+ldr x16, [x16, #3208]
 br x16
-.word 3451
+.word 3447
 	.no_dead_strip plt_ObjCRuntime_Trampolines__Block_release_intptr
 plt_ObjCRuntime_Trampolines__Block_release_intptr:
 _p_9:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3224]
+ldr x16, [x16, #3216]
 br x16
-.word 3463
+.word 3459
 	.no_dead_strip plt__jit_icall_mono_thread_self_abort
 plt__jit_icall_mono_thread_self_abort:
 _p_10:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3232]
+ldr x16, [x16, #3224]
 br x16
-.word 3465
+.word 3461
 	.no_dead_strip plt_object_Finalize
 plt_object_Finalize:
 _p_11:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3240]
+ldr x16, [x16, #3232]
 br x16
-.word 3490
+.word 3486
 	.no_dead_strip plt_intptr_op_Equality_intptr_intptr
 plt_intptr_op_Equality_intptr_intptr:
 _p_12:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3248]
+ldr x16, [x16, #3240]
 br x16
-.word 3495
+.word 3491
 	.no_dead_strip plt_ObjCRuntime_BlockLiteral_IsManagedBlock_intptr
 plt_ObjCRuntime_BlockLiteral_IsManagedBlock_intptr:
 _p_13:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3256]
+ldr x16, [x16, #3248]
 br x16
-.word 3500
+.word 3496
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
 plt__jit_icall_ves_icall_object_new_specific:
 _p_14:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3264]
+ldr x16, [x16, #3256]
 br x16
-.word 3505
+.word 3501
 	.no_dead_strip plt_ObjCRuntime_Trampolines_NIDBRBLEManagerSearchCompletionHandler__ctor_ObjCRuntime_BlockLiteral_
 plt_ObjCRuntime_Trampolines_NIDBRBLEManagerSearchCompletionHandler__ctor_ObjCRuntime_BlockLiteral_:
 _p_15:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3272]
+ldr x16, [x16, #3264]
 br x16
-.word 3537
+.word 3533
 	.no_dead_strip plt_Foundation_NSObject_get_Handle
 plt_Foundation_NSObject_get_Handle:
 _p_16:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3280]
+ldr x16, [x16, #3272]
 br x16
-.word 3539
+.word 3535
 	.no_dead_strip plt_Foundation_NSObject__ctor_Foundation_NSObjectFlag
 plt_Foundation_NSObject__ctor_Foundation_NSObjectFlag:
 _p_17:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3288]
+ldr x16, [x16, #3280]
 br x16
-.word 3544
+.word 3540
 	.no_dead_strip plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly
 plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly:
 _p_18:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3296]
+ldr x16, [x16, #3288]
 br x16
-.word 3549
+.word 3545
 	.no_dead_strip plt_Foundation_NSObject_set_IsDirectBinding_bool
 plt_Foundation_NSObject_set_IsDirectBinding_bool:
 _p_19:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3304]
+ldr x16, [x16, #3296]
 br x16
-.word 3554
+.word 3550
 	.no_dead_strip plt_ApiDefinition_Messaging_IntPtr_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_IntPtr_objc_msgSend_intptr_intptr:
 _p_20:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3312]
+ldr x16, [x16, #3304]
 br x16
-.word 3559
+.word 3555
 	.no_dead_strip plt_Foundation_NSObject_InitializeHandle_intptr_string
 plt_Foundation_NSObject_InitializeHandle_intptr_string:
 _p_21:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3320]
+ldr x16, [x16, #3312]
 br x16
-.word 3561
+.word 3557
 	.no_dead_strip plt_Foundation_NSObject__ctor_intptr
 plt_Foundation_NSObject__ctor_intptr:
 _p_22:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3328]
+ldr x16, [x16, #3320]
 br x16
-.word 3566
+.word 3562
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr
 plt__jit_icall_mono_helper_ldstr:
 _p_23:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3336]
+ldr x16, [x16, #3328]
 br x16
-.word 3571
+.word 3567
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_24:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3344]
+ldr x16, [x16, #3336]
 br x16
-.word 3591
-	.no_dead_strip plt_ObjCRuntime_BlockLiteral_SetupBlockImpl_System_Delegate_System_Delegate_bool_string
-plt_ObjCRuntime_BlockLiteral_SetupBlockImpl_System_Delegate_System_Delegate_bool_string:
+.word 3587
+	.no_dead_strip plt_ObjCRuntime_BlockLiteral_SetupBlockUnsafe_System_Delegate_System_Delegate
+plt_ObjCRuntime_BlockLiteral_SetupBlockUnsafe_System_Delegate_System_Delegate:
 _p_25:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3352]
+ldr x16, [x16, #3344]
 br x16
-.word 3619
+.word 3615
 	.no_dead_strip plt_ApiDefinition_Messaging_bool_objc_msgSend_IntPtr_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_bool_objc_msgSend_IntPtr_intptr_intptr_intptr:
 _p_26:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3360]
+ldr x16, [x16, #3352]
 br x16
-.word 3624
+.word 3620
 	.no_dead_strip plt_ObjCRuntime_BlockLiteral_CleanupBlock
 plt_ObjCRuntime_BlockLiteral_CleanupBlock:
 _p_27:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3368]
+ldr x16, [x16, #3360]
 br x16
-.word 3626
+.word 3622
 	.no_dead_strip plt_ApiDefinition_Messaging_void_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_void_objc_msgSend_intptr_intptr:
 _p_28:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3376]
+ldr x16, [x16, #3368]
 br x16
-.word 3631
+.word 3627
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_bpsdkBinding_BRPtouchBLEManager_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_bpsdkBinding_BRPtouchBLEManager_intptr:
 _p_29:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3384]
+ldr x16, [x16, #3376]
 br x16
-.word 3633
+.word 3629
 	.no_dead_strip plt_ObjCRuntime_Class_GetHandle_string
 plt_ObjCRuntime_Class_GetHandle_string:
 _p_30:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3392]
+ldr x16, [x16, #3384]
 br x16
-.word 3645
+.word 3641
 	.no_dead_strip plt_ApiDefinition_Messaging_void_objc_msgSend_IntPtr_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_void_objc_msgSend_IntPtr_intptr_intptr_intptr:
 _p_31:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3400]
+ldr x16, [x16, #3392]
 br x16
-.word 3650
+.word 3646
 	.no_dead_strip plt_Foundation_NSArray_ArrayFromHandle_Foundation_NSObject_intptr
 plt_Foundation_NSArray_ArrayFromHandle_Foundation_NSObject_intptr:
 _p_32:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3408]
+ldr x16, [x16, #3400]
 br x16
-.word 3652
+.word 3648
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_bpsdkBinding_BRPtouchBluetoothManager_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_bpsdkBinding_BRPtouchBluetoothManager_intptr:
 _p_33:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3416]
+ldr x16, [x16, #3408]
 br x16
-.word 3664
+.word 3660
 	.no_dead_strip plt_Foundation_NSString_FromHandle_intptr
 plt_Foundation_NSString_FromHandle_intptr:
 _p_34:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3424]
+ldr x16, [x16, #3416]
 br x16
-.word 3676
+.word 3672
 	.no_dead_strip plt_Foundation_NSString_CreateNative_string
 plt_Foundation_NSString_CreateNative_string:
 _p_35:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3432]
+ldr x16, [x16, #3424]
 br x16
-.word 3681
+.word 3677
 	.no_dead_strip plt_Foundation_NSString_ReleaseNative_intptr
 plt_Foundation_NSString_ReleaseNative_intptr:
 _p_36:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3440]
+ldr x16, [x16, #3432]
 br x16
-.word 3686
+.word 3682
 	.no_dead_strip plt_ApiDefinition_Messaging_Int64_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_Int64_objc_msgSend_intptr_intptr:
 _p_37:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3448]
+ldr x16, [x16, #3440]
 br x16
-.word 3691
+.word 3687
 	.no_dead_strip plt_ApiDefinition_Messaging_void_objc_msgSend_Int64_intptr_intptr_long
 plt_ApiDefinition_Messaging_void_objc_msgSend_Int64_intptr_intptr_long:
 _p_38:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3456]
+ldr x16, [x16, #3448]
 br x16
-.word 3693
+.word 3689
 	.no_dead_strip plt_ApiDefinition_Messaging_UInt32_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_UInt32_objc_msgSend_intptr_intptr:
 _p_39:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3464]
+ldr x16, [x16, #3456]
 br x16
-.word 3695
+.word 3691
 	.no_dead_strip plt_ApiDefinition_Messaging_void_objc_msgSend_UInt32_intptr_intptr_uint
 plt_ApiDefinition_Messaging_void_objc_msgSend_UInt32_intptr_intptr_uint:
 _p_40:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3472]
+ldr x16, [x16, #3464]
 br x16
-.word 3697
+.word 3693
 	.no_dead_strip plt_ApiDefinition_Messaging_float_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_float_objc_msgSend_intptr_intptr:
 _p_41:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3480]
+ldr x16, [x16, #3472]
 br x16
-.word 3699
+.word 3695
 	.no_dead_strip plt_ApiDefinition_Messaging_void_objc_msgSend_float_intptr_intptr_single
 plt_ApiDefinition_Messaging_void_objc_msgSend_float_intptr_intptr_single:
 _p_42:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3488]
+ldr x16, [x16, #3480]
 br x16
-.word 3701
+.word 3697
 	.no_dead_strip plt_Foundation_NSObject_get_SuperHandle
 plt_Foundation_NSObject_get_SuperHandle:
 _p_43:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3496]
+ldr x16, [x16, #3488]
 br x16
-.word 3703
+.word 3699
 	.no_dead_strip plt_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_intptr_intptr
 plt_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_intptr_intptr:
 _p_44:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3504]
+ldr x16, [x16, #3496]
 br x16
-.word 3708
+.word 3704
 	.no_dead_strip plt_Foundation_NSArray_FromNSObjects_Foundation_NSObject__
 plt_Foundation_NSArray_FromNSObjects_Foundation_NSObject__:
 _p_45:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3512]
+ldr x16, [x16, #3504]
 br x16
-.word 3710
+.word 3706
 	.no_dead_strip plt_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr:
 _p_46:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3520]
+ldr x16, [x16, #3512]
 br x16
-.word 3715
+.word 3711
 	.no_dead_strip plt_Foundation_NSObject_Dispose
 plt_Foundation_NSObject_Dispose:
 _p_47:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3528]
+ldr x16, [x16, #3520]
 br x16
-.word 3717
+.word 3713
 	.no_dead_strip plt_ApiDefinition_Messaging_int_objc_msgSend_int_intptr_intptr_int
 plt_ApiDefinition_Messaging_int_objc_msgSend_int_intptr_intptr_int:
 _p_48:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3536]
+ldr x16, [x16, #3528]
 br x16
-.word 3722
+.word 3718
 	.no_dead_strip plt_ApiDefinition_Messaging_bool_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_bool_objc_msgSend_intptr_intptr:
 _p_49:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3544]
+ldr x16, [x16, #3536]
 br x16
-.word 3724
+.word 3720
 	.no_dead_strip plt_ApiDefinition_Messaging_void_objc_msgSend_bool_intptr_intptr_bool
 plt_ApiDefinition_Messaging_void_objc_msgSend_bool_intptr_intptr_bool:
 _p_50:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3552]
+ldr x16, [x16, #3544]
 br x16
-.word 3726
+.word 3722
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSMutableArray_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSMutableArray_intptr:
 _p_51:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3560]
+ldr x16, [x16, #3552]
 br x16
-.word 3728
+.word 3724
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_intptr:
 _p_52:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3568]
+ldr x16, [x16, #3560]
 br x16
-.word 3740
+.word 3736
 	.no_dead_strip plt_Foundation_NSObject_MarkDirty
 plt_Foundation_NSObject_MarkDirty:
 _p_53:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3576]
+ldr x16, [x16, #3568]
 br x16
-.word 3745
+.word 3741
 	.no_dead_strip plt_Foundation_NSObject_Dispose_bool
 plt_Foundation_NSObject_Dispose_bool:
 _p_54:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3584]
+ldr x16, [x16, #3576]
 br x16
-.word 3750
+.word 3746
 	.no_dead_strip plt_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_Int64_intptr_intptr_intptr_long
 plt_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_Int64_intptr_intptr_intptr_long:
 _p_55:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3592]
+ldr x16, [x16, #3584]
 br x16
-.word 3755
+.word 3751
 	.no_dead_strip plt_ApiDefinition_Messaging_int_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_int_objc_msgSend_intptr_intptr:
 _p_56:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3600]
+ldr x16, [x16, #3592]
 br x16
-.word 3757
+.word 3753
 	.no_dead_strip plt_ApiDefinition_Messaging_int_objc_msgSend_PTSTATUSINFO_intptr_intptr_bpsdkBinding_PTSTATUSINFO
 plt_ApiDefinition_Messaging_int_objc_msgSend_PTSTATUSINFO_intptr_intptr_bpsdkBinding_PTSTATUSINFO:
 _p_57:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3608]
+ldr x16, [x16, #3600]
 br x16
-.word 3759
+.word 3755
 	.no_dead_strip plt_ApiDefinition_Messaging_int_objc_msgSend_ref_IntPtr_IntPtr_intptr_intptr_intptr__intptr
 plt_ApiDefinition_Messaging_int_objc_msgSend_ref_IntPtr_IntPtr_intptr_intptr_intptr__intptr:
 _p_58:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3616]
+ldr x16, [x16, #3608]
 br x16
-.word 3761
+.word 3757
 	.no_dead_strip plt_intptr_op_Inequality_intptr_intptr
 plt_intptr_op_Inequality_intptr_intptr:
 _p_59:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3624]
+ldr x16, [x16, #3616]
 br x16
-.word 3763
+.word 3759
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_intptr:
 _p_60:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3632]
+ldr x16, [x16, #3624]
 br x16
-.word 3768
+.word 3764
 	.no_dead_strip plt_ApiDefinition_Messaging_int_objc_msgSend_ref_IntPtr_intptr_intptr_intptr_
 plt_ApiDefinition_Messaging_int_objc_msgSend_ref_IntPtr_intptr_intptr_intptr_:
 _p_61:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3640]
+ldr x16, [x16, #3632]
 br x16
-.word 3780
+.word 3776
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_bpsdkBinding_BRPtouchPrinterStatus_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_bpsdkBinding_BRPtouchPrinterStatus_intptr:
 _p_62:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3648]
+ldr x16, [x16, #3640]
 br x16
-.word 3782
+.word 3778
 	.no_dead_strip plt_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_int_intptr_intptr_intptr_int
 plt_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_int_intptr_intptr_intptr_int:
 _p_63:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3656]
+ldr x16, [x16, #3648]
 br x16
-.word 3794
+.word 3790
 	.no_dead_strip plt_CoreGraphics_CGImage_get_Handle
 plt_CoreGraphics_CGImage_get_Handle:
 _p_64:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3664]
+ldr x16, [x16, #3656]
 br x16
-.word 3796
+.word 3792
 	.no_dead_strip plt_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_IntPtr_nuint_int_intptr_intptr_intptr_intptr_System_nuint_int
 plt_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_IntPtr_nuint_int_intptr_intptr_intptr_intptr_System_nuint_int:
 _p_65:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3672]
+ldr x16, [x16, #3664]
 br x16
-.word 3801
+.word 3797
 	.no_dead_strip plt_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_intptr_intptr_intptr:
 _p_66:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3680]
+ldr x16, [x16, #3672]
 br x16
-.word 3803
+.word 3799
 	.no_dead_strip plt_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_Int64_intptr_intptr_intptr_long
 plt_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_Int64_intptr_intptr_intptr_long:
 _p_67:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3688]
+ldr x16, [x16, #3680]
 br x16
-.word 3805
+.word 3801
 	.no_dead_strip plt_ApiDefinition_Messaging_int_objc_msgSend_bool_intptr_intptr_bool
 plt_ApiDefinition_Messaging_int_objc_msgSend_bool_intptr_intptr_bool:
 _p_68:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3696]
+ldr x16, [x16, #3688]
 br x16
-.word 3807
+.word 3803
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_bpsdkBinding_BRPtouchLabelParam_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_bpsdkBinding_BRPtouchLabelParam_intptr:
 _p_69:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3704]
+ldr x16, [x16, #3696]
 br x16
-.word 3809
+.word 3805
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_bpsdkBinding_BRPtouchLabelInfoStatus_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_bpsdkBinding_BRPtouchLabelInfoStatus_intptr:
 _p_70:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3712]
+ldr x16, [x16, #3704]
 br x16
-.word 3821
+.word 3817
 	.no_dead_strip plt_ApiDefinition_Messaging_short_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_short_objc_msgSend_intptr_intptr:
 _p_71:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3720]
+ldr x16, [x16, #3712]
 br x16
-.word 3833
+.word 3829
 	.no_dead_strip plt_ApiDefinition_Messaging_void_objc_msgSend_short_intptr_intptr_int16
 plt_ApiDefinition_Messaging_void_objc_msgSend_short_intptr_intptr_int16:
 _p_72:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3728]
+ldr x16, [x16, #3720]
 br x16
-.word 3835
+.word 3831
 	.no_dead_strip plt_ApiDefinition_Messaging_void_objc_msgSend_int_intptr_intptr_int
 plt_ApiDefinition_Messaging_void_objc_msgSend_int_intptr_intptr_int:
 _p_73:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3736]
+ldr x16, [x16, #3728]
 br x16
-.word 3837
+.word 3833
 	.no_dead_strip plt_ApiDefinition_Messaging_PTSTATUSINFO_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_PTSTATUSINFO_objc_msgSend_intptr_intptr:
 _p_74:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3744]
+ldr x16, [x16, #3736]
 br x16
-.word 3839
+.word 3835
 	.no_dead_strip plt_ApiDefinition_Messaging_void_objc_msgSend_PTSTATUSINFO_intptr_intptr_bpsdkBinding_PTSTATUSINFO
 plt_ApiDefinition_Messaging_void_objc_msgSend_PTSTATUSINFO_intptr_intptr_bpsdkBinding_PTSTATUSINFO:
 _p_75:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3752]
+ldr x16, [x16, #3744]
 br x16
-.word 3841
+.word 3837
 	.no_dead_strip plt_ApiDefinition_Messaging_Double_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_Double_objc_msgSend_intptr_intptr:
 _p_76:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3760]
+ldr x16, [x16, #3752]
 br x16
-.word 3843
+.word 3839
 	.no_dead_strip plt_ApiDefinition_Messaging_void_objc_msgSend_Double_intptr_intptr_double
 plt_ApiDefinition_Messaging_void_objc_msgSend_Double_intptr_intptr_double:
 _p_77:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3768]
+ldr x16, [x16, #3760]
 br x16
-.word 3845
+.word 3841
 	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
 plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_78:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3776]
+ldr x16, [x16, #3768]
 br x16
-.word 3847
+.word 3843
 	.no_dead_strip plt__jit_icall_mono_delegate_begin_invoke
 plt__jit_icall_mono_delegate_begin_invoke:
 _p_79:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3784]
+ldr x16, [x16, #3776]
 br x16
-.word 3885
+.word 3881
 	.no_dead_strip plt__jit_icall_mono_delegate_end_invoke
 plt__jit_icall_mono_delegate_end_invoke:
 _p_80:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3792]
+ldr x16, [x16, #3784]
 br x16
-.word 3914
+.word 3910
 	.no_dead_strip plt__icall_native_ObjCRuntime_Trampolines__Block_copy_intptr
 plt__icall_native_ObjCRuntime_Trampolines__Block_copy_intptr:
 _p_81:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3800]
+ldr x16, [x16, #3792]
 br x16
-.word 3941
+.word 3937
 	.no_dead_strip plt__icall_native_ObjCRuntime_Trampolines__Block_release_intptr
 plt__icall_native_ObjCRuntime_Trampolines__Block_release_intptr:
 _p_82:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3808]
+ldr x16, [x16, #3800]
 br x16
-.word 3943
+.word 3939
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_intptr_intptr:
 _p_83:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3816]
+ldr x16, [x16, #3808]
 br x16
-.word 3945
+.word 3941
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSendSuper_intptr_intptr:
 _p_84:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3824]
+ldr x16, [x16, #3816]
 br x16
-.word 3947
+.word 3943
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_intptr_intptr_intptr:
 _p_85:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3832]
+ldr x16, [x16, #3824]
 br x16
-.word 3949
+.word 3945
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_bool_objc_msgSend_IntPtr_intptr_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_bool_objc_msgSend_IntPtr_intptr_intptr_intptr:
 _p_86:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3840]
+ldr x16, [x16, #3832]
 br x16
-.word 3951
+.word 3947
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_intptr_intptr:
 _p_87:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3848]
+ldr x16, [x16, #3840]
 br x16
-.word 3953
+.word 3949
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_IntPtr_intptr_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_IntPtr_intptr_intptr_intptr:
 _p_88:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3856]
+ldr x16, [x16, #3848]
 br x16
-.word 3955
+.word 3951
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_intptr_intptr:
 _p_89:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3864]
+ldr x16, [x16, #3856]
 br x16
-.word 3957
+.word 3953
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_Int64_objc_msgSend_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_Int64_objc_msgSend_intptr_intptr:
 _p_90:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3872]
+ldr x16, [x16, #3864]
 br x16
-.word 3959
+.word 3955
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_int_intptr_intptr_int
 plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_int_intptr_intptr_int:
 _p_91:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3880]
+ldr x16, [x16, #3872]
 br x16
-.word 3961
+.word 3957
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_Int64_intptr_intptr_long
 plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_Int64_intptr_intptr_long:
 _p_92:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3888]
+ldr x16, [x16, #3880]
 br x16
-.word 3963
+.word 3959
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_UInt32_objc_msgSend_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_UInt32_objc_msgSend_intptr_intptr:
 _p_93:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3896]
+ldr x16, [x16, #3888]
 br x16
-.word 3965
+.word 3961
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_UInt32_intptr_intptr_uint
 plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_UInt32_intptr_intptr_uint:
 _p_94:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3904]
+ldr x16, [x16, #3896]
 br x16
-.word 3967
+.word 3963
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_float_objc_msgSend_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_float_objc_msgSend_intptr_intptr:
 _p_95:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3912]
+ldr x16, [x16, #3904]
 br x16
-.word 3969
+.word 3965
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_float_intptr_intptr_single
 plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_float_intptr_intptr_single:
 _p_96:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3920]
+ldr x16, [x16, #3912]
 br x16
-.word 3971
+.word 3967
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_bool_objc_msgSend_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_bool_objc_msgSend_intptr_intptr:
 _p_97:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3928]
+ldr x16, [x16, #3920]
 br x16
-.word 3973
+.word 3969
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_bool_intptr_intptr_bool
 plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_bool_intptr_intptr_bool:
 _p_98:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3936]
+ldr x16, [x16, #3928]
 br x16
-.word 3975
+.word 3971
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_int_intptr_intptr_int
 plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_int_intptr_intptr_int:
 _p_99:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3944]
+ldr x16, [x16, #3936]
 br x16
-.word 3977
+.word 3973
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_Double_objc_msgSend_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_Double_objc_msgSend_intptr_intptr:
 _p_100:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3952]
+ldr x16, [x16, #3944]
 br x16
-.word 3979
+.word 3975
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_Double_intptr_intptr_double
 plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_Double_intptr_intptr_double:
 _p_101:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3960]
+ldr x16, [x16, #3952]
 br x16
-.word 3981
+.word 3977
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_Int64_intptr_intptr_intptr_long
 plt__icall_native_ApiDefinition_Messaging_IntPtr_objc_msgSend_IntPtr_Int64_intptr_intptr_intptr_long:
 _p_102:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3968]
+ldr x16, [x16, #3960]
 br x16
-.word 3983
+.word 3979
 	.no_dead_strip plt_string_memcpy_byte__byte__int
 plt_string_memcpy_byte__byte__int:
 _p_103:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3976]
+ldr x16, [x16, #3968]
 br x16
-.word 3985
+.word 3981
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_PTSTATUSINFO_intptr_intptr_bpsdkBinding_PTSTATUSINFO
 plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_PTSTATUSINFO_intptr_intptr_bpsdkBinding_PTSTATUSINFO:
 _p_104:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3984]
+ldr x16, [x16, #3976]
 br x16
-.word 3990
+.word 3986
 	.no_dead_strip plt__jit_icall_mono_struct_delete_old
 plt__jit_icall_mono_struct_delete_old:
 _p_105:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #3992]
+ldr x16, [x16, #3984]
 br x16
-.word 3992
+.word 3988
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_ref_IntPtr_intptr_intptr_intptr_
 plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_ref_IntPtr_intptr_intptr_intptr_:
 _p_106:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #4000]
+ldr x16, [x16, #3992]
 br x16
-.word 4017
+.word 4013
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_int_intptr_intptr_intptr_int
 plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_int_intptr_intptr_intptr_int:
 _p_107:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #4008]
+ldr x16, [x16, #4000]
 br x16
-.word 4019
+.word 4015
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_Int64_intptr_intptr_intptr_long
 plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_Int64_intptr_intptr_intptr_long:
 _p_108:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #4016]
+ldr x16, [x16, #4008]
 br x16
-.word 4021
+.word 4017
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_intptr_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_intptr_intptr_intptr:
 _p_109:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #4024]
+ldr x16, [x16, #4016]
 br x16
-.word 4023
+.word 4019
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_IntPtr_nuint_int_intptr_intptr_intptr_intptr_System_nuint_int
 plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_IntPtr_IntPtr_nuint_int_intptr_intptr_intptr_intptr_System_nuint_int:
 _p_110:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #4032]
+ldr x16, [x16, #4024]
 br x16
-.word 4025
+.word 4021
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_bool_intptr_intptr_bool
 plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_bool_intptr_intptr_bool:
 _p_111:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #4040]
+ldr x16, [x16, #4032]
 br x16
-.word 4027
+.word 4023
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_ref_IntPtr_IntPtr_intptr_intptr_intptr__intptr
 plt__icall_native_ApiDefinition_Messaging_int_objc_msgSend_ref_IntPtr_IntPtr_intptr_intptr_intptr__intptr:
 _p_112:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #4048]
+ldr x16, [x16, #4040]
 br x16
-.word 4029
+.word 4025
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_PTSTATUSINFO_objc_msgSend_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_PTSTATUSINFO_objc_msgSend_intptr_intptr:
 _p_113:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #4056]
+ldr x16, [x16, #4048]
 br x16
-.word 4031
+.word 4027
 	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
 plt_wrapper_alloc_object_AllocVector_intptr_intptr:
 _p_114:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #4064]
+ldr x16, [x16, #4056]
 br x16
-.word 4033
+.word 4029
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_PTSTATUSINFO_intptr_intptr_bpsdkBinding_PTSTATUSINFO
 plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_PTSTATUSINFO_intptr_intptr_bpsdkBinding_PTSTATUSINFO:
 _p_115:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #4072]
+ldr x16, [x16, #4064]
 br x16
-.word 4041
+.word 4037
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_short_objc_msgSend_intptr_intptr
 plt__icall_native_ApiDefinition_Messaging_short_objc_msgSend_intptr_intptr:
 _p_116:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #4080]
+ldr x16, [x16, #4072]
 br x16
-.word 4043
+.word 4039
 	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_short_intptr_intptr_int16
 plt__icall_native_ApiDefinition_Messaging_void_objc_msgSend_short_intptr_intptr_int16:
 _p_117:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #4088]
+ldr x16, [x16, #4080]
 br x16
-.word 4045
+.word 4041
 	.no_dead_strip plt_ObjCRuntime_Trampolines_SDBRBLEManagerSearchCompletionHandler_Invoke_intptr_intptr
 plt_ObjCRuntime_Trampolines_SDBRBLEManagerSearchCompletionHandler_Invoke_intptr_intptr:
 _p_118:
-adrp x16, mono_aot_bpsdkBinding_got@PAGE+4096
+adrp x16, mono_aot_bpsdkBinding_got@PAGE+0
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #0]
+ldr x16, [x16, #4088]
 br x16
-.word 4047
+.word 4043
 	.no_dead_strip plt__jit_icall_mono_gchandle_new
 plt__jit_icall_mono_gchandle_new:
 _p_119:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+4096
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #8]
+ldr x16, [x16, #0]
 br x16
-.word 4049
+.word 4045
 	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
 plt__jit_icall_mono_thread_get_undeniable_exception:
 _p_120:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+4096
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #16]
+ldr x16, [x16, #8]
 br x16
-.word 4069
+.word 4065
 	.no_dead_strip plt__jit_icall_mono_marshal_ftnptr_eh_callback
 plt__jit_icall_mono_marshal_ftnptr_eh_callback:
 _p_121:
 adrp x16, mono_aot_bpsdkBinding_got@PAGE+4096
 add x16, x16, mono_aot_bpsdkBinding_got@PAGEOFF
-ldr x16, [x16, #24]
+ldr x16, [x16, #16]
 br x16
-.word 4108
+.word 4104
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_bpsdkBinding_got, 4128
+.lcomm mono_aot_bpsdkBinding_got, 4120
 got_end:
 .section	__DATA,__objc_selrefs,literal_pointers,no_dead_strip
 .align	3
@@ -40045,7 +39031,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "75764362-895F-4C3A-8A21-99E89138B650"
+	.asciz "FFFE25EE-AFE9-4360-BDDA-E63278C3FC15"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -40054,7 +39040,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 143,0
+	.long 141,0
 	.align 3
 	.quad mono_aot_bpsdkBinding_got
 	.align 3
@@ -40071,8 +39057,6 @@ _mono_aot_file_info:
 	.quad jit_code_end
 	.align 3
 	.quad method_addresses
-	.align 3
-	.quad 0
 	.align 3
 	.quad 0
 	.align 3
@@ -40124,13 +39108,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 394,4128,122,355,70,387000831,0,59533
-	.long 128,8,8,9,0,25,63112,3568
+	.long 393,4120,122,355,70,387000831,0,57749
+	.long 128,8,8,9,0,25,61320,3560
 	.long 3304,1880,0,2592,3232,2056,0,1520
-	.long 488,3560,0,0,0,0,0,0
+	.long 488,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0,0
-	.byte 37,221,72,102,71,98,236,41,236,50,201,225,178,37,193,15
+	.long 0
+	.byte 220,227,144,89,35,45,234,25,123,177,99,91,209,59,80,251
 	.globl _mono_aot_module_bpsdkBinding_info
 	.align 3
 _mono_aot_module_bpsdkBinding_info:

@@ -1,7 +1,21 @@
 ﻿<Properties StartupConfiguration="{C552B3F3-B345-4A4C-9350-24D66E9DFFD7}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Real Green/NetStandard/MobileLive.iOS/Implementations/Print.cs">
+    <Files>
+      <File FileName="../../Real Green/NetStandard/Common/View/PrinterSetupView.xaml.cs" Line="25" Column="1" />
+      <File FileName="../../Real Green/NetStandard/Common/View/PrinterSetupView.xaml" Line="80" Column="48" />
+      <File FileName="../../Real Green/NetStandard/Common/View/RouteListing.xaml.cs" Line="915" Column="23" />
+      <File FileName="../../Real Green/NetStandard/Common/ViewModel/PrinterSetupViewModel.cs" Line="54" Column="1" />
+      <File FileName="../../Real Green/NetStandard/Common/Printers/IPrinterBase.cs" Line="10" Column="19" />
+      <File FileName="../../Real Green/NetStandard/MobileLive.iOS/Implementations/Print.cs" Line="92" Column="88" />
+      <File FileName="../../Real Green/NetStandard/Common/Utilities/PrintHelpers.cs" Line="147" Column="54" />
+      <File FileName="../../Real Green/NetStandard/Common/View/ReportView.xaml.cs" Line="17" Column="4" />
+      <File FileName="../../Real Green/NetStandard/Common/View/ReportView.xaml" Line="24" Column="31" />
+      <File FileName="BPSDKSample/ViewController.cs" Line="63" Column="17" />
+      <File FileName="../../Real Green/NetStandard/Common/View/PrintSettingsView.xaml" Line="4" Column="53" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.BPSDKSample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1A445E63-542E-4CF2-B084-15FCBC7FEE2D" automaticSigning="False" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

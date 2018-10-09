@@ -8,21 +8,22 @@
 #include <objc/message.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <CloudKit/CloudKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import <Intents/Intents.h>
 
-@class UIApplicationDelegate;
-@class UIKit_UIControlEventProxy;
 @class __MonoMac_NSActionDispatcher;
 @class __MonoMac_NSAsyncActionDispatcher;
+@class UIKit_UIControlEventProxy;
 @class AppDelegate;
 @class ViewController;
+@class UIKit_UIDocumentPickerViewController__UIDocumentPickerDelegate;
 @class __NSObject_Disposer;
 @class BRPtouchBLEManager;
 @class BRPtouchBluetoothManager;
 @class BRPtouchDeviceInfo;
 @class BRPtouchLabelInfoStatus;
 @class BRPtouchLabelParam;
-@class BRPtouchNetworkDelegate;
 @class BRPtouchNetworkManager;
 @class BRPtouchPrinter;
 struct trampoline_struct_bbbbbbbbbbbbbbbbbbbbbbbbbbbb {
@@ -60,12 +61,7 @@ struct trampoline_struct_bbbbbbbbbbbbbbbbbbbbbbbbbbbb {
 @class BRPtouchPrinterStatus;
 @class BRPtouchPrintInfo;
 
-@interface UIApplicationDelegate : NSObject<UIApplicationDelegate> {
-}
-	-(id) init;
-@end
-
-@interface AppDelegate : NSObject<UIApplicationDelegate, UIApplicationDelegate> {
+@interface AppDelegate : NSObject<UIApplicationDelegate> {
 }
 	-(void) release;
 	-(id) retain;
@@ -85,15 +81,29 @@ struct trampoline_struct_bbbbbbbbbbbbbbbbbbbbbbbbbbbb {
 
 @interface ViewController : UIViewController {
 }
+	@property (nonatomic, assign) UIButton * btnSearch;
 	@property (nonatomic, assign) UIButton * buttonPrint;
+	@property (nonatomic, assign) UILabel * lblPrinterName;
+	@property (nonatomic, assign) UILabel * lblPrintStatusCode;
+	@property (nonatomic, assign) UITextField * txtPaperSize;
 	-(void) release;
 	-(id) retain;
 	-(int) xamarinGetGCHandle;
 	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UIButton *) btnSearch;
+	-(void) setBtnSearch:(UIButton *)p0;
 	-(UIButton *) buttonPrint;
 	-(void) setButtonPrint:(UIButton *)p0;
+	-(UILabel *) lblPrinterName;
+	-(void) setLblPrinterName:(UILabel *)p0;
+	-(UILabel *) lblPrintStatusCode;
+	-(void) setLblPrintStatusCode:(UILabel *)p0;
+	-(UITextField *) txtPaperSize;
+	-(void) setTxtPaperSize:(UITextField *)p0;
 	-(void) viewDidLoad;
 	-(void) didReceiveMemoryWarning;
+	-(void) BtnSearch_TouchUpInside:(UIButton *)p0;
+	-(void) UIButton5038_TouchUpInside:(UIButton *)p0;
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
@@ -177,11 +187,6 @@ struct trampoline_struct_bbbbbbbbbbbbbbbbbbbbbbbbbbbb {
 	-(void) setPinOffsetLeft:(unsigned int)p0;
 	-(unsigned int) pinOffsetRight;
 	-(void) setPinOffsetRight:(unsigned int)p0;
-	-(id) init;
-@end
-
-@interface BRPtouchNetworkDelegate : NSObject {
-}
 	-(id) init;
 @end
 

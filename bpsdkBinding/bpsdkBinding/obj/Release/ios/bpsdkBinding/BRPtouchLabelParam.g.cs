@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
@@ -45,12 +46,12 @@ namespace bpsdkBinding {
 	[Register("BRPtouchLabelParam", true)]
 	public unsafe partial class BRPtouchLabelParam : NSObject {
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		static readonly IntPtr class_ptr = Class.GetHandle ("BRPtouchLabelParam");
 		
 		public override IntPtr ClassHandle { get { return class_ptr; } }
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		[Export ("init")]
 		public BRPtouchLabelParam () : base (NSObjectFlag.Empty)
@@ -63,21 +64,21 @@ namespace bpsdkBinding {
 			}
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected BRPtouchLabelParam (NSObjectFlag t) : base (t)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected internal BRPtouchLabelParam (IntPtr handle) : base (handle)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual uint ImageAreaLength {
 			[Export ("imageAreaLength")]
 			get {
@@ -98,7 +99,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual uint ImageAreaLength_mm {
 			[Export ("imageAreaLength_mm")]
 			get {
@@ -119,7 +120,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual uint ImageAreaWidth {
 			[Export ("imageAreaWidth")]
 			get {
@@ -140,7 +141,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual uint ImageAreaWidth_mm {
 			[Export ("imageAreaWidth_mm")]
 			get {
@@ -161,7 +162,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual uint PaperID {
 			[Export ("paperID")]
 			get {
@@ -182,7 +183,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual uint PaperLength {
 			[Export ("paperLength")]
 			get {
@@ -203,7 +204,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual float PaperLength_mm {
 			[Export ("paperLength_mm")]
 			get {
@@ -224,7 +225,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual string PaperName {
 			[Export ("paperName")]
 			get {
@@ -251,7 +252,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual uint PaperSize {
 			[Export ("paperSize")]
 			get {
@@ -272,7 +273,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual uint PaperWidth {
 			[Export ("paperWidth")]
 			get {
@@ -293,7 +294,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual float PaperWidth_mm {
 			[Export ("paperWidth_mm")]
 			get {
@@ -314,7 +315,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual uint PhysicalOffsetX {
 			[Export ("physicalOffsetX")]
 			get {
@@ -335,7 +336,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual uint PhysicalOffsetY {
 			[Export ("physicalOffsetY")]
 			get {
@@ -356,7 +357,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual uint PinOffsetLeft {
 			[Export ("pinOffsetLeft")]
 			get {
@@ -377,7 +378,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual uint PinOffsetRight {
 			[Export ("pinOffsetRight")]
 			get {

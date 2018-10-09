@@ -9,9 +9,12 @@ void xamarin_register_modules_impl ()
 void xamarin_register_assemblies_impl ()
 {
 	guint32 exception_gchandle = 0;
+	xamarin_open_and_register ("bpsdkBinding.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
 
 }
 
+extern "C" void xamarin_create_classes_Xamarin_iOS();
 extern "C" { void mono_profiler_init_log (); }
 typedef void (*xamarin_profiler_symbol_def)();
 extern xamarin_profiler_symbol_def xamarin_profiler_symbol;
@@ -19,11 +22,12 @@ xamarin_profiler_symbol_def xamarin_profiler_symbol = NULL;
 void xamarin_setup_impl ()
 {
 	xamarin_profiler_symbol = mono_profiler_init_log;
+	xamarin_create_classes_Xamarin_iOS();
 	xamarin_gc_pump = TRUE;
 	xamarin_init_mono_debug = TRUE;
 	xamarin_executable_name = "BPSDKSample.exe";
 	mono_use_llvm = FALSE;
-	xamarin_log_level = 4;
+	xamarin_log_level = 0;
 	xamarin_arch_name = "x86_64";
 	xamarin_marshal_objectivec_exception_mode = MarshalObjectiveCExceptionModeUnwindManagedCode;
 	xamarin_debug_mode = TRUE;

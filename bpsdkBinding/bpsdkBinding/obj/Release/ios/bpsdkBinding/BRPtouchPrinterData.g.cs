@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
@@ -45,12 +46,12 @@ namespace bpsdkBinding {
 	[Register("BRPtouchPrinterData", true)]
 	public unsafe partial class BRPtouchPrinterData : NSObject {
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		static readonly IntPtr class_ptr = Class.GetHandle ("BRPtouchPrinterData");
 		
 		public override IntPtr ClassHandle { get { return class_ptr; } }
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		[Export ("init")]
 		public BRPtouchPrinterData () : base (NSObjectFlag.Empty)
@@ -63,14 +64,14 @@ namespace bpsdkBinding {
 			}
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected BRPtouchPrinterData (NSObjectFlag t) : base (t)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected internal BRPtouchPrinterData (IntPtr handle) : base (handle)
 		{
@@ -78,7 +79,7 @@ namespace bpsdkBinding {
 		}
 
 		[Export ("getPrinterList")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual NSObject[] PrinterList ()
 		{
 			if (IsDirectBinding) {

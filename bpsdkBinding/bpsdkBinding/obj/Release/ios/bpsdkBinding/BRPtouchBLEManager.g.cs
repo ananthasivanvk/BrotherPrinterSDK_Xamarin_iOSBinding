@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
@@ -45,12 +46,12 @@ namespace bpsdkBinding {
 	[Register("BRPtouchBLEManager", true)]
 	public unsafe partial class BRPtouchBLEManager : NSObject {
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		static readonly IntPtr class_ptr = Class.GetHandle ("BRPtouchBLEManager");
 		
 		public override IntPtr ClassHandle { get { return class_ptr; } }
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		[Export ("init")]
 		public BRPtouchBLEManager () : base (NSObjectFlag.Empty)
@@ -63,14 +64,14 @@ namespace bpsdkBinding {
 			}
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected BRPtouchBLEManager (NSObjectFlag t) : base (t)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected internal BRPtouchBLEManager (IntPtr handle) : base (handle)
 		{
@@ -78,7 +79,7 @@ namespace bpsdkBinding {
 		}
 
 		[Export ("startSearchWithCompletionHandler:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public unsafe virtual bool StartSearchWithCompletionHandler ([BlockProxy (typeof (ObjCRuntime.Trampolines.NIDBRBLEManagerSearchCompletionHandler))]BRBLEManagerSearchCompletionHandler handler)
 		{
 			if (handler == null)
@@ -101,7 +102,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("stopSearch")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual void StopSearch ()
 		{
 			if (IsDirectBinding) {
@@ -111,7 +112,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public static BRPtouchBLEManager SharedManager {
 			[Export ("sharedManager")]
 			get {

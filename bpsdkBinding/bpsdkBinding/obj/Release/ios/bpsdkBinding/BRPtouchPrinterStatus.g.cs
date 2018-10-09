@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
@@ -45,12 +46,12 @@ namespace bpsdkBinding {
 	[Register("BRPtouchPrinterStatus", true)]
 	public unsafe partial class BRPtouchPrinterStatus : NSObject {
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		static readonly IntPtr class_ptr = Class.GetHandle ("BRPtouchPrinterStatus");
 		
 		public override IntPtr ClassHandle { get { return class_ptr; } }
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		[Export ("init")]
 		public BRPtouchPrinterStatus () : base (NSObjectFlag.Empty)
@@ -63,21 +64,21 @@ namespace bpsdkBinding {
 			}
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected BRPtouchPrinterStatus (NSObjectFlag t) : base (t)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected internal BRPtouchPrinterStatus (IntPtr handle) : base (handle)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual short BatteryLevel {
 			[Export ("batteryLevel")]
 			get {
@@ -98,7 +99,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int BatteryResidualQuantityLevel {
 			[Export ("batteryResidualQuantityLevel")]
 			get {
@@ -119,7 +120,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual BRPtouchPrinterStatusBatteryTernary IsACConnected {
 			[Export ("isACConnected", ArgumentSemantic.UnsafeUnretained)]
 			get {
@@ -158,7 +159,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual BRPtouchPrinterStatusBatteryTernary IsBatteryMounted {
 			[Export ("isBatteryMounted", ArgumentSemantic.UnsafeUnretained)]
 			get {
@@ -197,7 +198,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int MaxOfBatteryResidualQuantityLevel {
 			[Export ("maxOfBatteryResidualQuantityLevel")]
 			get {
@@ -218,7 +219,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual PTSTATUSINFO StatusInfo {
 			[Export ("statusInfo", ArgumentSemantic.UnsafeUnretained)]
 			get {

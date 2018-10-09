@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
@@ -43,7 +44,7 @@ using CoreFoundation;
 
 namespace ObjCRuntime {
 	
-	[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+	[CompilerGenerated]
 	static partial class Trampolines {
 		
 		[DllImport ("/usr/lib/libobjc.dylib")]
@@ -76,7 +77,6 @@ namespace ObjCRuntime {
 			DBRBLEManagerSearchCompletionHandler invoker;
 			
 			[Preserve (Conditional=true)]
-			[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 			public unsafe NIDBRBLEManagerSearchCompletionHandler (BlockLiteral *block)
 			{
 				blockPtr = _Block_copy ((IntPtr) block);
@@ -84,14 +84,12 @@ namespace ObjCRuntime {
 			}
 			
 			[Preserve (Conditional=true)]
-			[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 			~NIDBRBLEManagerSearchCompletionHandler ()
 			{
 				_Block_release (blockPtr);
 			}
 			
 			[Preserve (Conditional=true)]
-			[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 			public unsafe static global::bpsdkBinding.BRBLEManagerSearchCompletionHandler Create (IntPtr block)
 			{
 				if (block == IntPtr.Zero)
@@ -105,7 +103,6 @@ namespace ObjCRuntime {
 			}
 			
 			[Preserve (Conditional=true)]
-			[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 			unsafe void Invoke (global::bpsdkBinding.BRPtouchDeviceInfo arg0)
 			{
 				invoker (blockPtr, arg0 == null ? IntPtr.Zero : arg0.Handle);

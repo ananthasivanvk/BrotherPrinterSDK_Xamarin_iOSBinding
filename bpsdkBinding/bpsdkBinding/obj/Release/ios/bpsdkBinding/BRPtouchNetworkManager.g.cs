@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
@@ -45,12 +46,12 @@ namespace bpsdkBinding {
 	[Register("BRPtouchNetworkManager", true)]
 	public unsafe partial class BRPtouchNetworkManager : NSObject, INSNetServiceBrowserDelegate, INSNetServiceDelegate {
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		static readonly IntPtr class_ptr = Class.GetHandle ("BRPtouchNetworkManager");
 		
 		public override IntPtr ClassHandle { get { return class_ptr; } }
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		[Export ("init")]
 		public BRPtouchNetworkManager () : base (NSObjectFlag.Empty)
@@ -63,14 +64,14 @@ namespace bpsdkBinding {
 			}
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected BRPtouchNetworkManager (NSObjectFlag t) : base (t)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected internal BRPtouchNetworkManager (IntPtr handle) : base (handle)
 		{
@@ -78,7 +79,7 @@ namespace bpsdkBinding {
 		}
 
 		[Export ("initWithPrinterNames:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public BRPtouchNetworkManager (NSObject[] strPrinterNames)
 			: base (NSObjectFlag.Empty)
 		{
@@ -97,7 +98,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("initWithPrinterName:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public BRPtouchNetworkManager (string strPrinterName)
 			: base (NSObjectFlag.Empty)
 		{
@@ -116,7 +117,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("setPrinterName:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual bool SetPrinterName (string strPrinterName)
 		{
 			if (strPrinterName == null)
@@ -135,7 +136,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("setPrinterNames:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual bool SetPrinterNames (NSObject[] strPrinterNames)
 		{
 			if (strPrinterNames == null)
@@ -154,7 +155,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("startSearch:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int StartSearch (int searchTime)
 		{
 			if (IsDirectBinding) {
@@ -164,7 +165,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public BRPtouchNetworkDelegate Delegate {
 			get {
 				return WeakDelegate as BRPtouchNetworkDelegate;
@@ -174,7 +175,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual bool IsEnableIPv6Search {
 			[Export ("isEnableIPv6Search")]
 			get {
@@ -195,7 +196,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual NSObject[] PrinterNetInfo {
 			[Export ("getPrinterNetInfo")]
 			get {
@@ -210,7 +211,7 @@ namespace bpsdkBinding {
 			
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual NSMutableArray RegisteredPrinterNames {
 			[Export ("registeredPrinterNames", ArgumentSemantic.Retain)]
 			get {
@@ -235,9 +236,9 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		object __mt_WeakDelegate_var;
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual NSObject WeakDelegate {
 			[Export ("delegate", ArgumentSemantic.UnsafeUnretained)]
 			get {
@@ -264,7 +265,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		protected override void Dispose (bool disposing)
 		{
 			base.Dispose (disposing);

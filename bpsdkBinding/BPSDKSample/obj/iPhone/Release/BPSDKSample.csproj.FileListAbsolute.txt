@@ -1,0 +1,14 @@
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/bin/iPhone/Release/BPSDKSample.exe
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/bin/iPhone/Release/BPSDKSample.pdb
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/bin/iPhone/Release/bpsdkBinding.dll
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/bin/iPhone/Release/Calabash.dll
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Release/ibtool/_BundleResourceWithLogicalName.items
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Release/actool/_PartialAppManifest.items
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Release/actool/_BundleResourceWithLogicalName.items
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Release/coremlc/_PartialAppManifest.items
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Release/coremlc/_BundleResourceWithLogicalName.items
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Release/optimized/
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Release/BPSDKSample.csprojResolveAssemblyReference.cache
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Release/BPSDKSample.csproj.CoreCompileInputs.cache
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Release/BPSDKSample.exe
+/Users/nikhilvijayan/Downloads/BrotherPrinterSDK_Xamarin_iOSBinding-master-3/bpsdkBinding/BPSDKSample/obj/iPhone/Release/BPSDKSample.pdb

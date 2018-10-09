@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
@@ -45,12 +46,12 @@ namespace bpsdkBinding {
 	[Register("BRPtouchBluetoothManager", true)]
 	public unsafe partial class BRPtouchBluetoothManager : NSObject {
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		static readonly IntPtr class_ptr = Class.GetHandle ("BRPtouchBluetoothManager");
 		
 		public override IntPtr ClassHandle { get { return class_ptr; } }
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		[Export ("init")]
 		public BRPtouchBluetoothManager () : base (NSObjectFlag.Empty)
@@ -63,14 +64,14 @@ namespace bpsdkBinding {
 			}
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected BRPtouchBluetoothManager (NSObjectFlag t) : base (t)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected internal BRPtouchBluetoothManager (IntPtr handle) : base (handle)
 		{
@@ -78,7 +79,7 @@ namespace bpsdkBinding {
 		}
 
 		[Export ("brShowBluetoothAccessoryPickerWithNameFilter:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual void BrShowBluetoothAccessoryPickerWithNameFilter (NSPredicate predicate)
 		{
 			if (predicate == null)
@@ -91,7 +92,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("registerForBRDeviceNotifications")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual void RegisterForBRDeviceNotifications ()
 		{
 			if (IsDirectBinding) {
@@ -102,7 +103,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("unregisterForBRDeviceNotifications")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual void UnregisterForBRDeviceNotifications ()
 		{
 			if (IsDirectBinding) {
@@ -112,7 +113,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual NSObject[] PairedDevices {
 			[Export ("pairedDevices")]
 			get {
@@ -127,7 +128,7 @@ namespace bpsdkBinding {
 			
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public static BRPtouchBluetoothManager SharedManager {
 			[Export ("sharedManager")]
 			get {

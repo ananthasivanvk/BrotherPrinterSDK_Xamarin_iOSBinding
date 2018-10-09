@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.10.1 (tarball Wed Apr 25 14:36:22 EDT 2018)"
+	.asciz "Mono AOT Compiler 5.8.0 (tarball Thu Mar 29 18:51:02 EDT 2018)"
 	.asciz "Calabash.dll"
 	.asciz ""
 
@@ -222,7 +222,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 143,0
+	.long 141,0
 	.align 3
 	.quad mono_aot_Calabash_got
 	.align 3
@@ -239,8 +239,6 @@ _mono_aot_file_info:
 	.quad jit_code_end
 	.align 3
 	.quad method_addresses
-	.align 3
-	.quad 0
 	.align 3
 	.quad 0
 	.align 3
@@ -293,12 +291,12 @@ _mono_aot_file_info:
 	.quad unbox_trampoline_addresses
 
 	.long 26,216,1,2,70,387000831,0,345
-	.long 128,8,8,9,0,25,888,536
+	.long 128,8,8,9,0,25,880,528
 	.long 344,184,0,288,320,232,0,176
-	.long 32,528,0,0,0,0,0,0
+	.long 32,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0,0
-	.byte 189,47,231,28,104,126,27,223,46,65,134,60,203,1,116,221
+	.long 0
+	.byte 124,96,49,8,2,245,50,241,3,145,108,78,191,120,121,134
 	.globl _mono_aot_module_Calabash_info
 	.align 3
 _mono_aot_module_Calabash_info:

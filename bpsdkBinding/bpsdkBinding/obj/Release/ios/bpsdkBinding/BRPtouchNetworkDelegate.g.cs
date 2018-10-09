@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
@@ -46,7 +47,7 @@ namespace bpsdkBinding {
 	[Model]
 	public unsafe abstract partial class BRPtouchNetworkDelegate : NSObject {
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		[Export ("init")]
 		protected BRPtouchNetworkDelegate () : base (NSObjectFlag.Empty)
@@ -55,14 +56,14 @@ namespace bpsdkBinding {
 			InitializeHandle (global::ApiDefinition.Messaging.IntPtr_objc_msgSendSuper (this.SuperHandle, global::ObjCRuntime.Selector.GetHandle ("init")), "init");
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected BRPtouchNetworkDelegate (NSObjectFlag t) : base (t)
 		{
 			IsDirectBinding = false;
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected internal BRPtouchNetworkDelegate (IntPtr handle) : base (handle)
 		{
@@ -70,7 +71,7 @@ namespace bpsdkBinding {
 		}
 
 		[Export ("didFinishSearch:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public abstract void DidFinishSearch (NSObject sender);
 	} /* class BRPtouchNetworkDelegate */
 }

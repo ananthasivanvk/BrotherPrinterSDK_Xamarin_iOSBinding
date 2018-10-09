@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
@@ -45,12 +46,12 @@ namespace bpsdkBinding {
 	[Register("BRPtouchPrinter", true)]
 	public unsafe partial class BRPtouchPrinter : NSObject, INSNetServiceBrowserDelegate, INSNetServiceDelegate {
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		static readonly IntPtr class_ptr = Class.GetHandle ("BRPtouchPrinter");
 		
 		public override IntPtr ClassHandle { get { return class_ptr; } }
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		[Export ("init")]
 		public BRPtouchPrinter () : base (NSObjectFlag.Empty)
@@ -63,14 +64,14 @@ namespace bpsdkBinding {
 			}
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected BRPtouchPrinter (NSObjectFlag t) : base (t)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected internal BRPtouchPrinter (IntPtr handle) : base (handle)
 		{
@@ -78,7 +79,7 @@ namespace bpsdkBinding {
 		}
 
 		[Export ("initWithPrinterIPAddress:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public BRPtouchPrinter (string IPAddress)
 			: base (NSObjectFlag.Empty)
 		{
@@ -97,7 +98,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("initWithPrinterName:interface:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public BRPtouchPrinter (string strPrinterName, ConnectionType type)
 			: base (NSObjectFlag.Empty)
 		{
@@ -124,7 +125,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("cancelPrinting")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int CancelPrinting ()
 		{
 			if (IsDirectBinding) {
@@ -135,7 +136,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("endCommunication")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual void EndCommunication ()
 		{
 			if (IsDirectBinding) {
@@ -146,7 +147,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("endPrint")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual void EndPrint ()
 		{
 			if (IsDirectBinding) {
@@ -157,7 +158,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("getMediaFileVersion:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual string GetMediaFileVersion (string filepath)
 		{
 			if (filepath == null)
@@ -176,7 +177,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("getPTStatus:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int GetPTStatus (PTSTATUSINFO status)
 		{
 			if (IsDirectBinding) {
@@ -187,7 +188,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("getPrinterSettings:require:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int GetPrinterSettings (out NSDictionary printerSettings, NSObject[] require)
 		{
 			if (require == null)
@@ -210,7 +211,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("getStatus:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int GetStatus (out BRPtouchPrinterStatus status)
 		{
 			IntPtr statusValue = IntPtr.Zero;
@@ -227,7 +228,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("getSystemReport:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int GetSystemReport (out string report)
 		{
 			IntPtr reportValue = IntPtr.Zero;
@@ -244,7 +245,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("isPrinterReady")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual bool IsPrinterReady ()
 		{
 			if (IsDirectBinding) {
@@ -255,7 +256,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("printFiles:copy:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int PrintFiles (NSObject[] filePaths, int nCopy)
 		{
 			if (filePaths == null)
@@ -274,7 +275,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("printImage:copy:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int PrintImage (CGImage imageRef, int nCopy)
 		{
 			if (imageRef == null)
@@ -287,7 +288,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("printPDFAtPath:pages:length:copy:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int PrintPDFAtPath (string pdfPath, NSObject[] indexes, nuint length, int nCopy)
 		{
 			if (pdfPath == null)
@@ -310,7 +311,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("sendData:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int SendData (NSData data)
 		{
 			if (data == null)
@@ -323,7 +324,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("sendDataEx:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int SendDataEx (NSData data)
 		{
 			if (data == null)
@@ -336,7 +337,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("sendFile:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int SendFile (string filePath)
 		{
 			if (filePath == null)
@@ -355,7 +356,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("sendFileEx:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int SendFileEx (string filePath)
 		{
 			if (filePath == null)
@@ -374,7 +375,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("sendFirmwareFile:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual bool SendFirmwareFile (NSObject[] sendFileArray)
 		{
 			if (sendFileArray == null)
@@ -393,7 +394,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("sendTemplate:connectionType:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int SendTemplate (string sendtemplateFilePath, ConnectionType type)
 		{
 			if (sendtemplateFilePath == null)
@@ -420,7 +421,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("sendTemplateFile:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual bool SendTemplateFile (NSObject[] sendFileArray)
 		{
 			if (sendFileArray == null)
@@ -439,7 +440,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("setAutoConnectBluetooth:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int SetAutoConnectBluetooth (bool flag)
 		{
 			if (IsDirectBinding) {
@@ -450,7 +451,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("setBLEAdvertiseLocalName:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual void SetBLEAdvertiseLocalName (string advertiseLocalName)
 		{
 			if (advertiseLocalName == null)
@@ -467,7 +468,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("setCustomPaperFile:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual bool SetCustomPaperFile (string strFilePath)
 		{
 			if (strFilePath == null)
@@ -486,7 +487,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("setIPAddress:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual void SetIPAddress (string strIP)
 		{
 			if (strIP == null)
@@ -503,7 +504,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("setInterface:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual void SetInterface (ConnectionType strInterface)
 		{
 			if (IsDirectBinding) {
@@ -522,7 +523,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("setPrintInfo:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual void SetPrintInfo (BRPtouchPrintInfo printInfo)
 		{
 			if (printInfo == null)
@@ -535,7 +536,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("setPrinterName:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual bool SetPrinterName (string strPrinterName)
 		{
 			if (strPrinterName == null)
@@ -554,7 +555,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("setPrinterSettings:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int SetPrinterSettings (NSDictionary printerSettings)
 		{
 			if (printerSettings == null)
@@ -567,7 +568,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("setupForBluetoothDeviceWithSerialNumber:")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual void SetupForBluetoothDeviceWithSerialNumber (string serialNumber)
 		{
 			if (serialNumber == null)
@@ -584,7 +585,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("startCommunication")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual bool StartCommunication ()
 		{
 			if (IsDirectBinding) {
@@ -595,7 +596,7 @@ namespace bpsdkBinding {
 		}
 		
 		[Export ("startPrint")]
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int StartPrint ()
 		{
 			if (IsDirectBinding) {
@@ -605,7 +606,7 @@ namespace bpsdkBinding {
 			}
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int BatteryStatus {
 			[Export ("getBatteryStatus")]
 			get {
@@ -618,7 +619,7 @@ namespace bpsdkBinding {
 			
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual BRPtouchLabelParam CurrentLabelParam {
 			[Export ("getCurrentLabelParam")]
 			get {
@@ -633,7 +634,7 @@ namespace bpsdkBinding {
 			
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual string DeviceSerialNumber {
 			[Export ("getDeviceSerialNumber")]
 			get {
@@ -646,7 +647,7 @@ namespace bpsdkBinding {
 			
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual string FirmVersion {
 			[Export ("getFirmVersion")]
 			get {
@@ -659,7 +660,7 @@ namespace bpsdkBinding {
 			
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int IsAutoConnectBluetooth {
 			[Export ("isAutoConnectBluetooth")]
 			get {
@@ -672,7 +673,7 @@ namespace bpsdkBinding {
 			
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual BRPtouchLabelInfoStatus LabelInfoStatus {
 			[Export ("getLabelInfoStatus")]
 			get {
@@ -687,7 +688,7 @@ namespace bpsdkBinding {
 			
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual string MediaVersion {
 			[Export ("getMediaVersion")]
 			get {
@@ -700,7 +701,7 @@ namespace bpsdkBinding {
 			
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual string ModelName {
 			[Export ("getModelName")]
 			get {
@@ -713,7 +714,7 @@ namespace bpsdkBinding {
 			
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual int PrinterBootMode {
 			[Export ("getPrinterBootMode")]
 			get {
@@ -726,7 +727,7 @@ namespace bpsdkBinding {
 			
 		}
 		
-		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		[CompilerGenerated]
 		public virtual NSObject[] SupportPaperArray {
 			[Export ("getSupportPaperArray")]
 			get {
