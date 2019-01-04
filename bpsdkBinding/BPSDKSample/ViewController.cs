@@ -61,7 +61,12 @@ namespace BPSDKSample
             if (!string.IsNullOrWhiteSpace(txtPaperSize.Text))
                 printInfo.StrPaperName = txtPaperSize.Text.Trim();
             else
-                printInfo.StrPaperName = "LETTER_CutSheet";//"LETTER_CutSheet";//"A7_CutSheet"; //"LETTER_Roll";//"LETTER_PerforatedRollRetract";//"LETTER_PerforatedRoll";
+                printInfo.StrPaperName = "LETTER_CutSheet";
+            //"LETTER_CutSheet";
+            //"A7_CutSheet"; 
+            //"LETTER_Roll";
+            //"LETTER_PerforatedRollRetract";
+            //"LETTER_PerforatedRoll";
 
 
             printInfo.NAutoCutFlag = 1;
@@ -76,8 +81,10 @@ namespace BPSDKSample
 
 
             // Initialize  printer
-            BRPtouchPrinter printer = new BRPtouchPrinter(selectedDeviceName, ConnectionType.Bluetooth);//"PJ-763_6424", ConnectionType.Bluetooth);
-                                                                                                        //BRPtouchPrinter printer = new BRPtouchPrinter("Brother RJ-4230B", ConnectionType.Bluetooth);
+            BRPtouchPrinter printer = new BRPtouchPrinter(selectedDeviceName, ConnectionType.Bluetooth);
+            //"PJ-763_6424", ConnectionType.Bluetooth);
+                                                                                                        
+            //BRPtouchPrinter printer = new BRPtouchPrinter("Brother RJ-4230B", ConnectionType.Bluetooth);
 
             printer.SetupForBluetoothDeviceWithSerialNumber(deviceSerialNumber);
 
@@ -126,11 +133,6 @@ namespace BPSDKSample
 
 
             NSObject[] pairedDevices = BRPtouchBluetoothManager.SharedManager.PairedDevices;
-            //foreach(NSObject in pairedDevices)
-
-            //BRPtouchDeviceInfo[] deviceInfos = null;
-            //pairedDevices.CopyTo(deviceInfos, 0);
-
             Foundation.NSPredicate nSPredicate = Foundation.NSPredicate.FromFormat("self LIKE '*'");
             BRPtouchBluetoothManager.SharedManager.BrShowBluetoothAccessoryPickerWithNameFilter(nSPredicate);
         }
@@ -156,7 +158,6 @@ namespace BPSDKSample
             vc.WasCancelled += Picker_WasCancelled;
 
             UIKit.UIViewController uiViewCtrl = new UIViewController();
-            //uiViewCtrl.PresentViewController(vc, true, null);
             UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(vc, true, null);
         }
         private void Picker_DidPickDocuments(UIDocumentPickerViewController controller, NSUrl[] urls)
@@ -173,11 +174,6 @@ namespace BPSDKSample
             var dataBytes = new byte[data.Length];
 
             PrintDoc(url.Path);
-
-            //Attach_Logic attach = new Attach_Logic(new Common.DataBaseContext.DataTables.Attach());
-            //attach.Browse(_customer, prgId, dataBytes, url.Path);
-            //_docsViewModel.OnAppearing();
-            //App.EndProgressDialog();
         }
         private void Picker_WasCancelled(object sender, EventArgs e)
         {
